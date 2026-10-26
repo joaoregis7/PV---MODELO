@@ -1,0 +1,6 @@
+{
+  "name": "Brinca e Recicla",
+  "description": "O Acervo Completo com Mais de 60 Brinquedos Recicláveis para Criar com Sua Turma no Dia das Crianças.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
