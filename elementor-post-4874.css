@@ -58,7 +58,8 @@ html body{
 
 
 /* Start custom CSS for button, class: .elementor-element-51d038c7 */.elementor-4874 .elementor-element.elementor-element-51d038c7 {
-  animation: pulse-soft 2s infinite ease-in-out;
+  animation: none !important;
+  transform: none !important;
 }
 
 @keyframes pulse-soft {

@@ -880,22 +880,81 @@
       line-height: 1.45 !important;
       color: #52677B !important;
     }
-    .elementor-element-4019c18,
-    .elementor-element-51d038c7 {
+    .elementor-element-4019c18 {
       width: 100% !important;
-      max-width: 560px !important;
+      max-width: 650px !important;
+      margin-top: 24px !important;
+      margin-bottom: 0 !important;
       margin-left: auto !important;
       margin-right: auto !important;
+      text-align: center !important;
     }
     .elementor-element-51d038c7 {
-      margin-top: 14px !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-top: 16px !important;
+      margin-bottom: 0 !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      text-align: center !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      animation: none !important;
+      transform: none !important;
     }
-    .elementor-element-51d038c7 .elementor-button {
-      background: #FFBF3F !important;
-      color: #103B64 !important;
+    .elementor-element-51d038c7 .elementor-widget-container {
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center !important;
     }
-    .elementor-element-51d038c7 .elementor-button .elementor-button-text {
-      color: #103B64 !important;
+    .elementor-element-51d038c7 .elementor-button,
+    #cta-conteudo-completo {
+      position: relative !important;
+      overflow: hidden !important;
+      isolation: isolate !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      min-height: 58px !important;
+      padding: 18px 36px !important;
+      background: linear-gradient(135deg, #3cc178, #31b26e) !important;
+      background-color: #31b26e !important;
+      border: 0 !important;
+      border-radius: 999px !important;
+      color: #ffffff !important;
+      box-shadow: 0 10px 24px rgba(49, 178, 110, 0.4) !important;
+      text-decoration: none !important;
+      animation: none !important;
+      transform: none !important;
+      transition: box-shadow 0.2s ease, background 0.2s ease !important;
+      cursor: pointer !important;
+    }
+    .elementor-element-51d038c7 .elementor-button:hover,
+    #cta-conteudo-completo:hover {
+      background: linear-gradient(135deg, #43cf84, #2fae6b) !important;
+      box-shadow: 0 14px 30px rgba(49, 178, 110, 0.5) !important;
+      transform: none !important;
+    }
+    .elementor-element-51d038c7 .elementor-button .elementor-button-content-wrapper,
+    #cta-conteudo-completo .elementor-button-content-wrapper {
+      position: relative !important;
+      z-index: 2 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+    }
+    .elementor-element-51d038c7 .elementor-button .elementor-button-text,
+    #cta-conteudo-completo .elementor-button-text {
+      color: #ffffff !important;
+      font-family: 'Poppins', Arial, sans-serif !important;
+      font-size: 18px !important;
+      font-weight: 900 !important;
+      letter-spacing: 0.02em !important;
+      text-transform: uppercase !important;
     }
 
     /* -------------------------------------------------------- */
@@ -962,6 +1021,85 @@
       color: #FFFFFF !important;
       border-radius: 999px !important;
       box-shadow: 0 8px 20px rgba(20, 93, 160, 0.25) !important;
+    }
+    /* Header estilizado da Seção de Bônus */
+    .bonus-header-wrapper {
+      text-align: center !important;
+      margin: 0 auto 36px auto !important;
+      padding: 0 16px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+    }
+    .bonus-header-eyebrow {
+      margin: 0 !important;
+      padding: 0 !important;
+      font-family: 'Poppins', Arial, sans-serif !important;
+      font-size: 14px !important;
+      font-weight: 800 !important;
+      color: #145DA0 !important;
+      letter-spacing: 0.08em !important;
+      text-transform: uppercase !important;
+      line-height: 1.3 !important;
+    }
+    .bonus-header-title {
+      margin: 2px 0 6px 0 !important;
+      padding: 0 !important;
+      font-family: 'Poppins', Arial, sans-serif !important;
+      font-size: clamp(28px, 4.2vw, 44px) !important;
+      font-weight: 900 !important;
+      color: #103B64 !important;
+      letter-spacing: -0.02em !important;
+      line-height: 1.15 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 12px !important;
+      text-transform: uppercase !important;
+    }
+    .bonus-header-gift-icon {
+      font-size: 1.05em !important;
+      line-height: 1 !important;
+      display: inline-block !important;
+    }
+    .bonus-header-badge-wrapper {
+      margin-top: 4px !important;
+      display: flex !important;
+      justify-content: center !important;
+    }
+    .bonus-header-badge {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      background: #145DA0 !important;
+      color: #FFFFFF !important;
+      font-family: 'Poppins', Arial, sans-serif !important;
+      font-size: 13px !important;
+      font-weight: 900 !important;
+      letter-spacing: 0.06em !important;
+      text-transform: uppercase !important;
+      padding: 7px 24px !important;
+      border-radius: 999px !important;
+      box-shadow: 0 6px 16px rgba(20, 93, 160, 0.25) !important;
+    }
+    @media (max-width: 767px) {
+      .bonus-header-wrapper {
+        margin-bottom: 24px !important;
+      }
+      .bonus-header-eyebrow {
+        font-size: 12px !important;
+        letter-spacing: 0.05em !important;
+      }
+      .bonus-header-title {
+        font-size: 24px !important;
+        gap: 8px !important;
+      }
+      .bonus-header-badge {
+        font-size: 11.5px !important;
+        padding: 6px 18px !important;
+      }
     }
     .elementor-element-30ffb0da {
       display: grid !important;
@@ -1654,6 +1792,8 @@
 
     #cta-hero-completo::after,
     .elementor-element-3971d552 .elementor-button::after,
+    #cta-conteudo-completo::after,
+    .elementor-element-51d038c7 .elementor-button::after,
     #cta-plano-completo::after,
     .elementor-element-1fa06f28 .elementor-button::after {
       content: '' !important;
@@ -1782,20 +1922,32 @@
 				<div class="elementor-element elementor-element-30f42e31 elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="30f42e31" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><span style="font-size: 26px; line-height: 1;">💧</span></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Cuidados e Manutenção</h3><p class="elementor-image-box-description">Entenda como cuidar da água, filtragem e evitar problemas.</p></div></div>				</div>
 				</div>
+				</div>
 				<div class="elementor-element elementor-element-4019c18 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="4019c18" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p><span style="font-weight: 400;">Orientações práticas para consultar e aplicar em cada etapa da construção do seu lago.</span></p>								</div>
-				<div class="elementor-element elementor-element-51d038c7 e-transform elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="51d038c7" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="button.default">
-										<a href="#plano-completo" id="cta-conteudo-completo" class="elementor-button elementor-button-link elementor-size-sm gtm-link-click">
-						<span class="elementor-button-content-wrapper">
-									<span class="elementor-button-text">QUERO COMEÇAR MINHA CRIAÇÃO</span>
-					</span>
-					</a>
-								</div>
+				<div class="elementor-element elementor-element-51d038c7 elementor-widget elementor-widget-button" data-id="51d038c7" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+					<div class="elementor-widget-container" style="display: flex; justify-content: center; width: 100%;">
+						<a href="#plano-completo" id="cta-conteudo-completo" class="elementor-button elementor-button-link elementor-size-sm gtm-link-click">
+							<span class="elementor-button-content-wrapper">
+								<span class="elementor-button-text">QUERO COMEÇAR MEU PROJETO</span>
+							</span>
+						</a>
+					</div>
 				</div>
 					</div>
 				</div>
 		<div class="elementor-element elementor-element-6f9fdc18 e-flex e-con-boxed e-con e-parent" data-id="6f9fdc18" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div data-rocket-location-hash="0d1d122c37e275cae87447b3c2a86443" class="e-con-inner">
+				<div class="bonus-header-wrapper">
+					<p class="bonus-header-eyebrow">E NÃO PARA POR AÍ, VOCÊ AINDA RECEBE</p>
+					<h2 class="bonus-header-title">
+						<span class="bonus-header-gift-icon" aria-hidden="true">🎁</span>
+						<span>5 BÔNUS EXCLUSIVOS</span>
+					</h2>
+					<div class="bonus-header-badge-wrapper">
+						<span class="bonus-header-badge">SÓ NO PACOTE COMPLETO</span>
+					</div>
+				</div>
 		<div class="elementor-element elementor-element-30ffb0da e-con-full e-flex e-con e-child" data-id="30ffb0da" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-6de59a84 e-con-full e-flex e-con e-child" data-id="6de59a84" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 				<div class="elementor-element elementor-element-78083748 e-transform elementor-widget elementor-widget-heading" data-id="78083748" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
