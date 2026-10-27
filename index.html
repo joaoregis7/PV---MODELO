@@ -235,17 +235,38 @@
 .lc-viewport img{-webkit-user-drag:none;user-select:none}
 .elementor-element-1842b7ed .lc-slide{aspect-ratio:900/1272}
 .elementor-element-1842b7ed .lc-slide{overflow:hidden!important;-webkit-clip-path:inset(0 round 12px)!important;clip-path:inset(0 round 12px)!important;background:#FFFFFF!important;border:1px solid #D9E8F0!important}
-.elementor-element-depoimentos-carousel .lc-slide{aspect-ratio:900/1600!important;overflow:hidden!important;-webkit-clip-path:inset(0 round 16px)!important;clip-path:inset(0 round 16px)!important;background:#FFFFFF!important;border:4px solid #FFFFFF!important;box-shadow:0 8px 24px rgba(0,0,0,0.18)!important}
-.elementor-element-depoimentos-carousel .lc-slide .swiper-slide-image{object-fit:cover!important;width:100%!important;height:100%!important;border-radius:12px!important;opacity:1!important;visibility:visible!important}
+.elementor-element-depoimentos-carousel .lc-slide {
+  aspect-ratio: 900 / 1600 !important;
+  overflow: hidden !important;
+  -webkit-clip-path: inset(0 round 16px) !important;
+  clip-path: inset(0 round 16px) !important;
+  background: #FFFFFF !important;
+  border: 4px solid #FFFFFF !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18) !important;
+}
+.elementor-element-depoimentos-carousel .lc-slide .swiper-slide-inner,
+.elementor-element-depoimentos-carousel .lc-slide figure {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  background: #FFFFFF !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.elementor-element-depoimentos-carousel .lc-slide .swiper-slide-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+  display: block !important;
+}
 .elementor-element-1842b7ed .lc-slide .swiper-slide-image{object-fit:cover!important}
 .lc-viewport .lc-slide .swiper-slide-inner,.lc-viewport .lc-slide figure{overflow:hidden!important}
-    .depo-wrapper {
-    position: relative;
-    overflow: hidden;
-    height: 100% !important;
-    border-radius: 12px;
-    margin: 0 !important;
-}
+    .depo-wrapper { width: 100% !important; height: 100% !important; margin: 0 !important; padding: 0 !important; }
 
 
 .depo-img-contain {
@@ -2066,8 +2087,7 @@
 
 <style id="custom-dobras-spacing-and-design">
   /* ---------------------------------------------------- */
-  /* PADRONIZAÇÃO TIPOGRÁFICA: HEADLINES EM INTER 800     */
-  /* (Padronizada com todas as headlines da página)       */
+  /* PADRONIZAÇÃO TIPOGRÁFICA: TODAS AS HEADLINES POPPINS */
   /* ---------------------------------------------------- */
   .bonus-header-title,
   .bonus-header-title span,
@@ -2077,24 +2097,38 @@
   .scarcity-timer-heading,
   .timer-num,
   .timer-label,
-  .scarcity-timer-sub {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  .scarcity-timer-sub,
+  .elementor-element-19b7410c,
+  .elementor-element-19b7410c p,
+  .elementor-element-19b7410c b,
+  .elementor-element-65bf8782,
+  .elementor-element-65bf8782 p,
+  .elementor-element-65bf8782 b,
+  .elementor-element-13b62e04,
+  .elementor-element-13b62e04 p,
+  .elementor-element-13b62e04 b,
+  .elementor-element-21b6d432,
+  .elementor-element-21b6d432 p,
+  .elementor-element-21b6d432 b {
+    font-family: 'Poppins', Arial, sans-serif !important;
   }
   .bonus-header-title {
-    font-size: clamp(26px, 4vw, 42px) !important;
-    font-weight: 800 !important;
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-size: clamp(26px, 3.8vw, 40px) !important;
+    font-weight: 900 !important;
     text-transform: uppercase !important;
-    letter-spacing: -0.5px !important;
+    letter-spacing: -0.6px !important;
     line-height: 1.15 !important;
     color: #103B64 !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     gap: 12px !important;
-    margin: 2px 0 6px 0 !important;
+    margin: 4px 0 10px 0 !important;
   }
   .bonus-header-eyebrow {
-    font-size: 13px !important;
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-size: 13.5px !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
     letter-spacing: 0.08em !important;
@@ -2102,11 +2136,12 @@
     margin: 0 !important;
   }
   .bonus-header-badge {
-    font-size: 13px !important;
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-size: 12px !important;
     font-weight: 800 !important;
     letter-spacing: 0.06em !important;
     text-transform: uppercase !important;
-    padding: 7px 24px !important;
+    padding: 7px 22px !important;
     border-radius: 999px !important;
     background: #145DA0 !important;
     color: #FFFFFF !important;
@@ -2127,7 +2162,7 @@
   }
 
   /* ---------------------------------------------------- */
-  /* BÔNUS: CARDS COM MESMA RÉGUA E ALINHAMENTO PERFEITO  */
+  /* BÔNUS: CARDS COM MESMA RÉGUA E ESPAÇAMENTO PERFEITO  */
   /* ---------------------------------------------------- */
   .elementor-element-6de59a84,
   .elementor-element-12d1fcfc,
@@ -2141,9 +2176,9 @@
     border: 1px solid #D9E8F0 !important;
     border-radius: 18px !important;
     box-shadow: 0 8px 24px rgba(16, 59, 100, 0.06) !important;
-    padding: 18px 14px 20px 14px !important;
+    padding: 24px 18px 22px 18px !important;
     height: 100% !important;
-    min-height: 520px !important;
+    min-height: 580px !important;
     box-sizing: border-box !important;
   }
 
@@ -2153,21 +2188,21 @@
   .elementor-element-2a41bcd2,
   .elementor-element-6609a07d {
     width: 100% !important;
-    height: 195px !important;
+    height: 185px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    margin: 0 auto 10px auto !important;
+    margin: 0 auto 16px auto !important;
     padding: 0 !important;
   }
   .elementor-element-45e73b68 img,
   .elementor-element-7bf4d1e6 img,
   .elementor-element-2a41bcd2 img,
   .elementor-element-6609a07d img {
-    width: 180px !important;
-    height: 180px !important;
-    max-width: 180px !important;
-    max-height: 180px !important;
+    width: 175px !important;
+    height: 175px !important;
+    max-width: 175px !important;
+    max-height: 175px !important;
     object-fit: contain !important;
     background: #FFFFFF !important;
     background-color: #FFFFFF !important;
@@ -2189,44 +2224,46 @@
     width: 100% !important;
   }
 
-  /* TÍTULOS DOS BÔNUS EM PRETO E MESMA ALTURA */
+  /* TÍTULOS DOS BÔNUS EM PRETO COM FONTE POPPINS E ESPAÇAMENTO RESPIRADO */
   .elementor-element-19b7410c,
   .elementor-element-65bf8782,
   .elementor-element-13b62e04,
   .elementor-element-21b6d432 {
     text-align: center !important;
-    height: 28px !important;
+    margin: 0 0 16px 0 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    margin: 0 0 6px 0 !important;
   }
+  .elementor-element-19b7410c p,
+  .elementor-element-65bf8782 p,
+  .elementor-element-13b62e04 p,
+  .elementor-element-21b6d432 p,
   .elementor-element-19b7410c b,
   .elementor-element-65bf8782 b,
   .elementor-element-13b62e04 b,
   .elementor-element-21b6d432 b {
     color: #000000 !important;
     font-family: 'Poppins', Arial, sans-serif !important;
-    font-size: 19px !important;
+    font-size: 21px !important;
     font-weight: 800 !important;
-    line-height: 1.2 !important;
+    line-height: 1.25 !important;
     display: block !important;
     text-align: center !important;
+    margin: 0 !important;
   }
 
-  /* DESCRIÇÕES COM MESMA ALTURA (58px) PARA ALINHAR A RÉGUA */
+  /* DESCRIÇÃO COM ESPAÇAMENTO CORRETO ANTES DO CHECKLIST */
   .elementor-element-baf9138,
   .elementor-element-211ec2c4,
   .elementor-element-409c9bdd,
   .elementor-element-46c35dbc {
     text-align: center !important;
-    height: 58px !important;
-    min-height: 58px !important;
-    max-height: 58px !important;
+    min-height: 56px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    margin: 0 0 12px 0 !important;
+    margin: 0 0 20px 0 !important;
     padding: 0 4px !important;
   }
   .elementor-element-baf9138 p,
@@ -2234,13 +2271,14 @@
   .elementor-element-409c9bdd p,
   .elementor-element-46c35dbc p {
     text-align: center !important;
-    font-size: 13.5px !important;
-    line-height: 1.35 !important;
+    font-family: 'Inter', -apple-system, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
     color: #52677B !important;
     margin: 0 !important;
   }
 
-  /* CHECKLISTS ALINHADOS À ESQUERDA (CONFORME SOLICITADO NO ÁUDIO) */
+  /* CHECKLISTS ALINHADOS À ESQUERDA COM ESPAÇAMENTO CONFORTÁVEL */
   .elementor-element-52d4a64d,
   .elementor-element-120c71b6,
   .elementor-element-3c8c035e,
@@ -2250,9 +2288,9 @@
     display: flex !important;
     justify-content: flex-start !important;
     flex-grow: 1 !important;
-    min-height: 125px !important;
-    margin: 0 0 16px 0 !important;
-    padding: 0 8px !important;
+    min-height: 136px !important;
+    margin: 0 0 22px 0 !important;
+    padding: 0 6px !important;
     box-sizing: border-box !important;
   }
   .elementor-element-52d4a64d .elementor-icon-list-items,
@@ -2266,7 +2304,7 @@
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
-    gap: 7px !important;
+    gap: 11px !important;
   }
   .elementor-element-52d4a64d .elementor-icon-list-item,
   .elementor-element-120c71b6 .elementor-icon-list-item,
@@ -2276,8 +2314,8 @@
     align-items: flex-start !important;
     justify-content: flex-start !important;
     text-align: left !important;
-    font-size: 13px !important;
-    line-height: 1.35 !important;
+    font-size: 13.5px !important;
+    line-height: 1.4 !important;
     color: #52677B !important;
   }
   .elementor-element-52d4a64d .elementor-icon-list-icon,
@@ -2285,336 +2323,272 @@
   .elementor-element-3c8c035e .elementor-icon-list-icon,
   .elementor-element-19f1fb95 .elementor-icon-list-icon {
     display: inline-flex !important;
+    align-items: center !important;
     margin-right: 8px !important;
-    margin-top: 2px !important;
+    flex-shrink: 0 !important;
+    color: #145DA0 !important;
+  }
+  .elementor-element-52d4a64d .elementor-icon-list-icon svg,
+  .elementor-element-120c71b6 .elementor-icon-list-icon svg,
+  .elementor-element-3c8c035e .elementor-icon-list-icon svg,
+  .elementor-element-19f1fb95 .elementor-icon-list-icon svg {
+    width: 14px !important;
+    height: 14px !important;
+    fill: #145DA0 !important;
   }
 
-  /* CARDZINHO DE VALOR RISCADO + GRÁTIS NA MESMA RÉGUA HORIZONTAL */
+  /* BOTÕES DE VALOR / ANCORAGEM PERFEITAMENTE ALINHADOS NA MESMA RÉGUA */
   .elementor-element-40b03d4a,
   .elementor-element-394fa0c4,
   .elementor-element-1459bc2d,
   .elementor-element-5661fd48 {
     margin-top: auto !important;
     width: 100% !important;
-    display: block !important;
-  }
-  .elementor-element-40b03d4a .elementor-heading-title,
-  .elementor-element-394fa0c4 .elementor-heading-title,
-  .elementor-element-1459bc2d .elementor-heading-title,
-  .elementor-element-5661fd48 .elementor-heading-title {
-    width: 100% !important;
-    height: 44px !important;
-    line-height: 44px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    text-align: center !important;
-    background: #145DA0 !important;
-    border-radius: 10px !important;
-    padding: 0 10px !important;
-    font-size: 15px !important;
-    box-shadow: 0 4px 12px rgba(20, 93, 160, 0.2) !important;
     box-sizing: border-box !important;
-    margin: 0 !important;
+  }
+  .bonus-btn-box {
+    width: 100% !important;
+    height: 48px !important;
+    background: #103B64 !important;
+    border: 1px solid #145DA0 !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    font-family: 'Poppins', Arial, sans-serif !important;
+    box-shadow: 0 4px 12px rgba(16, 59, 100, 0.2) !important;
+    padding: 0 12px !important;
+    box-sizing: border-box !important;
+  }
+  .bonus-lbl {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    color: #FFFFFF !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
+  }
+  .bonus-val-strike {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    color: #FF4D4D !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    text-decoration: line-through !important;
+    text-decoration-color: #FF4D4D !important;
+    text-decoration-thickness: 1.5px !important;
+  }
+  .bonus-lbl-gratis {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    color: #00E676 !important;
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.04em !important;
+    text-transform: uppercase !important;
   }
 
   /* ---------------------------------------------------- */
-  /* CARROSSEL DE DEPOIMENTOS: MESMO ESTILO DO 1842b7ed   */
-  /* BORDAS BRANCAS E FORMATO PADRONIZADO                 */
+  /* BLOCO 7 — DEPOIMENTOS: CARROSSEL SLEEK E MOLDURA    */
   /* ---------------------------------------------------- */
-  .elementor-element-depoimentos-carousel .lc-slide,
+  .elementor-element-depoimentos-container,
+  .elementor-element-depoimentos-container::before,
+  .elementor-element-depoimentos-container > .e-con-inner {
+    background: #103B64 !important;
+    background-color: #103B64 !important;
+  }
+  .elementor-element-depoimentos-title .elementor-heading-title {
+    color: #FFFFFF !important;
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+  }
   .elementor-element-depoimentos-carousel .swiper-slide {
-    aspect-ratio: 900 / 1600 !important;
     background: #FFFFFF !important;
-    background-color: #FFFFFF !important;
-    border: 4px solid #FFFFFF !important;
+    border: 3px solid #FFFFFF !important;
     border-radius: 16px !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22) !important;
     overflow: hidden !important;
-    -webkit-clip-path: inset(0 round 16px) !important;
-    clip-path: inset(0 round 16px) !important;
   }
-  .elementor-element-depoimentos-carousel .swiper-slide-inner,
-  .elementor-element-depoimentos-carousel .depo-wrapper {
-    width: 100% !important;
-    height: 100% !important;
-    background: #FFFFFF !important;
+  .elementor-element-depoimentos-carousel .swiper-slide img {
     border-radius: 12px !important;
-    overflow: hidden !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .elementor-element-depoimentos-carousel .swiper-slide-image {
+    display: block !important;
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    border-radius: 12px !important;
-    display: block !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  }
-  .elementor-element-depoimentos-carousel .swiper-lazy {
-    opacity: 1 !important;
-    visibility: visible !important;
   }
 
   /* ---------------------------------------------------- */
-  /* GARANTIA 30 DIAS: LINHAS ALINHADAS E PADRONIZADAS    */
-  /* Elimina bordas duplas e deixa todas as linhas em 1px */
+  /* BLOCO 8 — PLANOS: FUNDO CLARO E CARDS EM DESTAQUE    */
   /* ---------------------------------------------------- */
-  .elementor-element-4f4f0ec4 .elementor-icon-list-item::after,
-  .elementor-4874 .elementor-element.elementor-element-4f4f0ec4 .elementor-icon-list-item:not(:last-child):after,
-  .elementor-element-4af4d716 .elementor-icon-list-item::after {
-    display: none !important;
-    content: none !important;
-    border: none !important;
-  }
-  .elementor-element-4af4d716 .elementor-icon-list-items,
-  .elementor-element-4f4f0ec4 .elementor-icon-list-items {
+  .elementor-element-5cc62ff9,
+  .elementor-element-5cc62ff9::before,
+  .elementor-element-5cc62ff9 > .e-con-inner {
     background: #F5FAFD !important;
-    border: 1px solid #D9E8F0 !important;
-    border-radius: 16px !important;
-    padding: 16px 20px !important;
+    background-color: #F5FAFD !important;
   }
-  .elementor-element-4af4d716 .elementor-icon-list-item,
-  .elementor-element-4f4f0ec4 .elementor-icon-list-item {
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
+  .elementor-element-5e030fc .elementor-heading-title {
+    color: #103B64 !important;
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-weight: 900 !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* BLOCO 9 — GARANTIA 30 DIAS: LINHAS UNIFORMES 1PX     */
+  /* ---------------------------------------------------- */
+  .elementor-element-4af4d716 {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+  }
+  .elementor-element-31899374 .elementor-heading-title {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-weight: 900 !important;
+    color: #103B64 !important;
+  }
+  .guarantee-lines-box {
+    border: 1px solid #D9E8F0 !important;
+    border-radius: 14px !important;
+    background: #F5FAFD !important;
+    overflow: hidden !important;
+    margin: 18px 0 !important;
+  }
+  .guarantee-line-item {
+    padding: 13px 18px !important;
     border-bottom: 1px solid #D9E8F0 !important;
-    padding: 12px 0 !important;
-    margin: 0 !important;
     display: flex !important;
     align-items: center !important;
+    gap: 10px !important;
+    font-size: 14px !important;
+    color: #1F2937 !important;
   }
-  .elementor-element-4af4d716 .elementor-icon-list-item:last-child,
-  .elementor-element-4f4f0ec4 .elementor-icon-list-item:last-child {
+  .guarantee-line-item:last-child {
     border-bottom: none !important;
-    padding-bottom: 4px !important;
+  }
+  .elementor-element-4af4d716 ul.elementor-icon-list-items li:not(:last-child)::after,
+  .elementor-element-4af4d716 .elementor-icon-list-item:not(:last-child)::after {
+    display: none !important;
+    content: none !important;
+    height: 0 !important;
   }
 
   /* ---------------------------------------------------- */
-  /* PULSO LENTO E BRILHO RELUZENTE NOS BOTÕES CTA VERDES */
+  /* BLOCO 10 — COMO FUNCIONA O ACESSO                    */
   /* ---------------------------------------------------- */
-  @keyframes pulsarLentoCTA {
-    0%, 100% {
+  .elementor-element-36c2edd4,
+  .elementor-element-36c2edd4::before,
+  .elementor-element-36c2edd4 > .e-con-inner {
+    background: #103B64 !important;
+    background-color: #103B64 !important;
+  }
+  .elementor-element-fa07ab3 .elementor-heading-title {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-weight: 900 !important;
+    color: #FFFFFF !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* BLOCO 11 — FAQ                                       */
+  /* ---------------------------------------------------- */
+  .elementor-element-6d6feb5b {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+  }
+  .elementor-element-472cc342 .elementor-heading-title {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-weight: 900 !important;
+    color: #103B64 !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* BLOCO 12 — RODAPÉ                                    */
+  /* ---------------------------------------------------- */
+  .elementor-element-2edc39ef,
+  .elementor-element-2edc39ef::before,
+  .elementor-element-2edc39ef > .e-con-inner {
+    background: #103B64 !important;
+    background-color: #103B64 !important;
+    color: #FFFFFF !important;
+    padding: 30px 16px !important;
+  }
+  .elementor-element-1fdf6462 .elementor-heading-title {
+    color: #FFFFFF !important;
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-weight: 700 !important;
+  }
+  .elementor-element-4177e5a3,
+  .elementor-element-4177e5a3 p,
+  .elementor-element-4177e5a3 span {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* PULSAÇÃO SUAVE E ELEGANTE NOS CTAS PRINCIPAIS        */
+  /* ---------------------------------------------------- */
+  @keyframes ctaGentlePulse {
+    0% {
       transform: scale(1);
-      box-shadow: 0 10px 24px rgba(49, 178, 110, 0.38);
+      box-shadow: 0 8px 24px rgba(39, 174, 96, 0.35);
     }
     50% {
       transform: scale(1.035);
-      box-shadow: 0 14px 32px rgba(49, 178, 110, 0.65);
-    }
-  }
-
-  @keyframes passarBrilhoReluzCTA {
-    0% {
-      transform: translateX(-160%) skewX(-22deg);
-    }
-    28% {
-      transform: translateX(260%) skewX(-22deg);
+      box-shadow: 0 14px 34px rgba(39, 174, 96, 0.55);
     }
     100% {
-      transform: translateX(260%) skewX(-22deg);
+      transform: scale(1);
+      box-shadow: 0 8px 24px rgba(39, 174, 96, 0.35);
     }
   }
 
   #cta-hero-completo,
+  .elementor-element-3971d552 .elementor-button,
   #cta-conteudo-completo,
-  #cta-bonus-completo,
+  .elementor-element-51d038c7 .elementor-button,
   #bonus-cta-container .elementor-button,
-  #cta-acesso-completo,
   .elementor-element-49832822 .elementor-button,
-  #cta-faq-completo,
   .faq-final-cta .elementor-button {
-    animation: pulsarLentoCTA 2.8s ease-in-out infinite !important;
-    background: linear-gradient(135deg, #3cc178 0%, #31b26e 100%) !important;
-    background-color: #31b26e !important;
-    position: relative !important;
-    overflow: hidden !important;
+    animation: ctaGentlePulse 2.8s ease-in-out infinite !important;
+  }
+
+  #cta-plano-completo,
+  .elementor-element-1fa06f28 .elementor-button {
+    animation: none !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* BRILHO RELUZENTE SUAVE NO BOTÃO CTA                  */
+  /* ---------------------------------------------------- */
+  @keyframes passarBrilhoSuave {
+    0% { transform: translateX(-150%) skewX(-20deg); }
+    35% { transform: translateX(250%) skewX(-20deg); }
+    100% { transform: translateX(250%) skewX(-20deg); }
   }
 
   #cta-hero-completo::after,
+  .elementor-element-3971d552 .elementor-button::after,
   #cta-conteudo-completo::after,
-  #cta-bonus-completo::after,
-  #bonus-cta-container .elementor-button::after,
-  #cta-acesso-completo::after,
-  .elementor-element-49832822 .elementor-button::after,
-  #cta-faq-completo::after,
-  .faq-final-cta .elementor-button::after {
+  .elementor-element-51d038c7 .elementor-button::after,
+  #cta-plano-completo::after,
+  .elementor-element-1fa06f28 .elementor-button::after {
     content: '' !important;
     display: block !important;
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
-    width: 45% !important;
+    width: 40% !important;
     height: 100% !important;
     background: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.75) 50%,
+      rgba(255, 255, 255, 0.28) 50%,
       rgba(255, 255, 255, 0) 100%
     ) !important;
-    transform: translateX(-160%) skewX(-22deg) !important;
-    animation: passarBrilhoReluzCTA 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
+    transform: translateX(-150%) skewX(-20deg);
+    animation: passarBrilhoSuave 3s ease-in-out infinite !important;
     pointer-events: none !important;
-    z-index: 10 !important;
-  }
-
-  /* ---------------------------------------------------- */
-  /* REDUÇÃO E HARMONIZAÇÃO DO ESPAÇAMENTO ENTRE DOBRAS   */
-  /* ---------------------------------------------------- */
-  
-  /* 1. HERO */
-  .elementor-element-4c6be628,
-  html body div.elementor-element-4c6be628 {
-    padding-top: 24px !important;
-    padding-bottom: 26px !important;
-    --padding-top: 24px !important;
-    --padding-bottom: 26px !important;
-  }
-
-  /* 2. BARRA DE VÍDEO / INTRO */
-  .elementor-element-22543443 {
-    padding-top: 22px !important;
-    padding-bottom: 22px !important;
-    --padding-top: 22px !important;
-    --padding-bottom: 22px !important;
-  }
-
-  /* 3. TUDO O QUE VOCÊ PRECISA (4 CARDS) */
-  .elementor-element-790607e2 {
-    padding-top: 36px !important;
-    padding-bottom: 36px !important;
-    --padding-top: 36px !important;
-    --padding-bottom: 36px !important;
-  }
-  .elementor-element-5f2c2b4d .elementor-heading-title {
-    margin-bottom: 20px !important;
-  }
-
-  /* 4. DOBRA DE BÔNUS */
-  .elementor-element-6f9fdc18 {
-    padding-top: 36px !important;
-    padding-bottom: 38px !important;
-    --padding-top: 36px !important;
-    --padding-bottom: 38px !important;
-  }
-  .bonus-header-wrapper {
-    margin: 0 auto 24px auto !important;
-  }
-
-  /* 5. CRONÔMETRO DE ESCASSEZ */
-  .scarcity-timer-section {
-    padding: 26px 20px 28px !important;
-  }
-  .scarcity-timer-heading {
-    margin: 0 0 16px 0 !important;
-  }
-  .scarcity-timer-display {
-    margin: 0 0 16px 0 !important;
-  }
-
-  /* 6. ESTE MATERIAL É IDEAL PARA VOCÊ QUE DESEJA */
-  .elementor-element-760ddb4b {
-    padding-top: 36px !important;
-    padding-bottom: 38px !important;
-    --padding-top: 36px !important;
-    --padding-bottom: 38px !important;
-  }
-  .elementor-element-760ddb4b .elementor-heading-title {
-    margin-bottom: 22px !important;
-  }
-
-  /* 7. DEPOIMENTOS */
-  .elementor-element-depoimentos-container {
-    padding: 36px 0 38px !important;
-  }
-  .elementor-element-depoimentos-container > .e-con-inner {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  .elementor-element-depoimentos-title {
-    margin-bottom: 22px !important;
-  }
-
-  /* 8. OFERTA / PLANOS */
-  .elementor-element-5cc62ff9 {
-    padding-top: 36px !important;
-    padding-bottom: 40px !important;
-    --padding-top: 36px !important;
-    --padding-bottom: 40px !important;
-  }
-  .elementor-element-5e030fc .elementor-heading-title {
-    margin-bottom: 20px !important;
-  }
-
-  /* 9. GARANTIA 30 DIAS */
-  .elementor-element-4af4d716 {
-    padding: 36px 24px !important;
-    --padding-top: 36px !important;
-    --padding-bottom: 36px !important;
-  }
-
-  /* 10. COMO FUNCIONA O ACESSO */
-  .elementor-element-36c2edd4 {
-    padding-top: 36px !important;
-    padding-bottom: 36px !important;
-    --padding-top: 36px !important;
-    --padding-bottom: 36px !important;
-  }
-  .elementor-element-fa07ab3 .elementor-heading-title {
-    margin-bottom: 22px !important;
-  }
-  .elementor-element-49832822 {
-    margin-top: 26px !important;
-    margin-bottom: 0 !important;
-  }
-
-  /* 11. PERGUNTAS FREQUENTES */
-  .elementor-element-6d6feb5b {
-    padding-top: 36px !important;
-    padding-bottom: 38px !important;
-    --padding-top: 36px !important;
-    --padding-bottom: 38px !important;
-    --gap: 20px !important;
-    gap: 20px !important;
-  }
-  .elementor-element-472cc342 .elementor-heading-title {
-    margin-bottom: 18px !important;
-  }
-  .faq-final-cta {
-    margin-top: 24px !important;
-    margin-bottom: 0 !important;
-  }
-
-  /* 12. RODAPÉ */
-  .elementor-element-2edc39ef {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-    --padding-top: 20px !important;
-    --padding-bottom: 20px !important;
-  }
-
-  /* ---------------------------------------------------- */
-  /* AJUSTES RESPONSIVOS MOBILE                           */
-  /* ---------------------------------------------------- */
-  @media (max-width: 767px) {
-    .elementor-element-4c6be628 { padding-top: 18px !important; padding-bottom: 20px !important; }
-    .elementor-element-22543443 { padding-top: 16px !important; padding-bottom: 16px !important; }
-    .elementor-element-790607e2 { padding-top: 26px !important; padding-bottom: 26px !important; }
-    .elementor-element-6f9fdc18 { padding-top: 28px !important; padding-bottom: 28px !important; }
-    .scarcity-timer-section { padding: 22px 14px 24px !important; }
-    .elementor-element-760ddb4b { padding-top: 28px !important; padding-bottom: 28px !important; }
-    .elementor-element-depoimentos-container { padding: 28px 0 30px !important; }
-    .elementor-element-5cc62ff9 { padding-top: 28px !important; padding-bottom: 30px !important; }
-    .elementor-element-4af4d716 { padding: 28px 16px !important; }
-    .elementor-element-36c2edd4 { padding-top: 28px !important; padding-bottom: 28px !important; }
-    .elementor-element-6d6feb5b { padding-top: 28px !important; padding-bottom: 30px !important; }
-    .elementor-element-2edc39ef { padding-top: 16px !important; padding-bottom: 16px !important; }
+    z-index: 5 !important;
   }
 </style>
 
@@ -2948,37 +2922,27 @@
 				</div>
 				<div class="elementor-element elementor-element-depoimentos-carousel elementor-widget__width-inherit elementor-widget elementor-widget-image-carousel" data-id="depoimentos-carousel" data-element_type="widget" data-e-type="widget" data-settings='{"slides_to_show":"5","lazyload":"yes","autoplay_speed":0,"speed":5000,"slides_to_show_mobile":"1","slides_to_show_tablet":"3","navigation":"none","autoplay":"yes","infinite":"yes","image_spacing_custom":{"unit":"px","size":20,"sizes":[]},"image_spacing_custom_tablet":{"unit":"px","size":"","sizes":[]},"image_spacing_custom_mobile":{"unit":"px","size":"","sizes":[]}}' data-widget_type="image-carousel.default" style="">
 					<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="rtl">
-						<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento1.webp" data-src="/depoimento1.webp" alt="Depoimento 1"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento2.webp" data-src="/depoimento2.webp" alt="Depoimento 2"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento3.webp" data-src="/depoimento3.webp" alt="Depoimento 3"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento4.webp" data-src="/depoimento4.webp" alt="Depoimento 4"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento5.webp" data-src="/depoimento5.webp" alt="Depoimento 5"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento1.webp" data-src="/depoimento1.webp" alt="Depoimento 1"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento2.webp" data-src="/depoimento2.webp" alt="Depoimento 2"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento3.webp" data-src="/depoimento3.webp" alt="Depoimento 3"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento4.webp" data-src="/depoimento4.webp" alt="Depoimento 4"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento5.webp" data-src="/depoimento5.webp" alt="Depoimento 5"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento1.webp" data-src="/depoimento1.webp" alt="Depoimento 1"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento2.webp" data-src="/depoimento2.webp" alt="Depoimento 2"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento3.webp" data-src="/depoimento3.webp" alt="Depoimento 3"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento4.webp" data-src="/depoimento4.webp" alt="Depoimento 4"><div class="swiper-lazy-preloader"></div></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento5.webp" data-src="/depoimento5.webp" alt="Depoimento 5"><div class="swiper-lazy-preloader"></div></figure></div>
-						</div>
-					</div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento1.webp" alt="Depoimento 1" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento2.webp" alt="Depoimento 2" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
-						</div>
+					<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento1.webp" alt="Depoimento 1" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento2.webp" alt="Depoimento 2" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento1.webp" alt="Depoimento 1" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento2.webp" alt="Depoimento 2" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento1.webp" alt="Depoimento 1" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento2.webp" alt="Depoimento 2" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 <div class="elementor-element elementor-element-5cc62ff9 e-flex e-con-boxed e-con e-parent" data-id="5cc62ff9" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div data-rocket-location-hash="c44a09835e2d07ed744c97ea2d59f472" class="e-con-inner">
 				<div class="elementor-element elementor-element-e2f7c7 e-transform elementor-widget elementor-widget-heading" data-id="e2f7c7" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
@@ -3508,8 +3472,8 @@ document.addEventListener("DOMContentLoaded", function() {
       offset=norm(offset);
     }
     function norm(o){if(setW<=0)return o;if(rtl){o=((o%setW)+setW)%setW;}else{o=o%setW;if(o>0)o-=setW;else if(o<=-setW)o+=setW;}return o;}
-    function loadImg(slide){var img=slide.querySelector('img');if(img){if(!img.getAttribute('src')&&img.getAttribute('data-src')){img.setAttribute('src',img.getAttribute('data-src'));}img.classList.add('swiper-lazy-loaded');img.style.opacity='1';img.style.visibility='visible';}}
-    function setImg(slide){var img=slide.querySelector('img[data-src]');if(!img)return;img.setAttribute('loading','eager');if(!img.getAttribute('src')){img.setAttribute('src',img.getAttribute('data-src'));}img.classList.add('swiper-lazy-loaded');img.style.opacity='1';img.style.visibility='visible';img.addEventListener('load',function(){try{slide.style.transform='translateZ(0)';void slide.offsetHeight;}catch(_){}},{once:true});}
+    function loadImg(slide){var img=slide.querySelector('img[data-src]');if(img&&!img.getAttribute('src')){img.setAttribute('src',img.getAttribute('data-src'));}}
+    function setImg(slide){var img=slide.querySelector('img[data-src]');if(!img)return;img.setAttribute('loading','eager');if(!img.getAttribute('src')){img.setAttribute('src',img.getAttribute('data-src'));img.addEventListener('load',function(){try{slide.style.transform='translateZ(0)';void slide.offsetHeight;}catch(_){}},{once:true});}}
     function idxFromOffset(){if(unit<=0||setW<=0||n<=0)return 0;var k=Math.round((rtl?offset:-offset)/unit)%n;return (k+n)%n;}
     function ensureWindow(){if(unit<=0||n<=0)return;var ci=idxFromOffset();lastIdx=ci;var all=track.children;for(var d=-1;d<=3;d++){var j=((ci+d)%n+n)%n;if(all[j])setImg(all[j]);if(all[j+n])setImg(all[j+n]);}}
     function onVis(entries){
@@ -3551,18 +3515,7 @@ document.addEventListener("DOMContentLoaded", function() {
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',boot,{once:true});}else{boot();}
 })();
 </script>
-<style id="below-fold-cv">
-.elementor-element-6f9fdc18,.elementor-element-5cc62ff9,.elementor-element-790607e2,.elementor-element-760ddb4b,.elementor-element-depoimentos-container,.elementor-element-4af4d716,.elementor-element-36c2edd4,.elementor-element-6d6feb5b,.elementor-element-2edc39ef{content-visibility:auto}
-.elementor-element-6f9fdc18{contain-intrinsic-size:auto 3700px}
-.elementor-element-5cc62ff9{contain-intrinsic-size:auto 3200px}
-.elementor-element-790607e2{contain-intrinsic-size:auto 1400px}
-.elementor-element-760ddb4b{contain-intrinsic-size:auto 1400px}
-.elementor-element-depoimentos-container{contain-intrinsic-size:auto 900px}
-.elementor-element-4af4d716{contain-intrinsic-size:auto 1300px}
-.elementor-element-36c2edd4{contain-intrinsic-size:auto 1900px}
-.elementor-element-6d6feb5b{contain-intrinsic-size:auto 1300px}
-.elementor-element-2edc39ef{contain-intrinsic-size:auto 600px}
-</style>
+
 
 
 
