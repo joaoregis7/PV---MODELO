@@ -133,7 +133,7 @@
     html body, html body * {
       font-family: 'Poppins', Arial, sans-serif !important;
     }
-    html body p, html body li, html body span, html body .elementor-widget-text-editor, html body .elementor-icon-list-text, html body .elementor-image-box-description {
+    html body p, html body li, html body .elementor-widget-text-editor, html body .elementor-icon-list-text, html body .elementor-image-box-description {
       font-weight: 500 !important;
     }
     html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body .elementor-heading-title {
@@ -1070,21 +1070,25 @@
       text-transform: uppercase !important;
       line-height: 1.3 !important;
     }
-    .bonus-header-title {
-      margin: 2px 0 10px 0 !important;
-      padding: 0 !important;
-      font-family: 'Poppins', Arial, sans-serif !important;
-      font-size: clamp(28px, 4vw, 44px) !important;
-      font-weight: 900 !important;
-      color: #103B64 !important;
-      letter-spacing: -0.6px !important;
-      line-height: 1.15 !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      gap: 12px !important;
-      text-transform: uppercase !important;
-    }
+    .bonus-header-title,
+  .bonus-header-title span,
+  .bonus-header-title * {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-size: clamp(28px, 4vw, 44px) !important;
+    font-weight: 900 !important;
+    color: #103B64 !important;
+    letter-spacing: -0.6px !important;
+    line-height: 1.15 !important;
+    text-transform: uppercase !important;
+  }
+  .bonus-header-title {
+    margin: 2px 0 10px 0 !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
     .bonus-header-gift-icon {
       font-size: 1.05em !important;
       line-height: 1 !important;
@@ -1125,21 +1129,25 @@
       text-transform: uppercase !important;
       line-height: 1.3 !important;
     }
-      .bonus-header-title {
-      margin: 2px 0 10px 0 !important;
-      padding: 0 !important;
-      font-family: 'Poppins', Arial, sans-serif !important;
-      font-size: clamp(28px, 4vw, 44px) !important;
-      font-weight: 900 !important;
-      color: #103B64 !important;
-      letter-spacing: -0.6px !important;
-      line-height: 1.15 !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      gap: 12px !important;
-      text-transform: uppercase !important;
-    }
+      .bonus-header-title,
+  .bonus-header-title span,
+  .bonus-header-title * {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-size: clamp(28px, 4vw, 44px) !important;
+    font-weight: 900 !important;
+    color: #103B64 !important;
+    letter-spacing: -0.6px !important;
+    line-height: 1.15 !important;
+    text-transform: uppercase !important;
+  }
+  .bonus-header-title {
+    margin: 2px 0 10px 0 !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
       .bonus-header-badge {
         font-size: 11.5px !important;
         padding: 6px 18px !important;
@@ -1418,7 +1426,15 @@
     .elementor-element-1dd39f4c .elementor-image-box-title {
       color: #103B64 !important;
     }
-    .elementor-element-3f84cb3f .elementor-heading-title,
+    .elementor-element-3f84cb3f .elementor-heading-title {
+      color: #52677B !important;
+      font-family: 'Poppins', Arial, sans-serif !important;
+      font-size: clamp(38px, 4.5vw, 48px) !important;
+      font-weight: 800 !important;
+      letter-spacing: -0.5px !important;
+      line-height: 1 !important;
+      margin: 4px 0 8px 0 !important;
+    }
     .elementor-element-2d7edbc3 .elementor-heading-title {
       color: #00E676 !important;
       font-family: 'Poppins', Arial, sans-serif !important;
@@ -1471,13 +1487,17 @@
     margin: 0 !important;
   }
     .elementor-element-6b1bad13 p,
-    .elementor-element-43d42567 .elementor-icon-list-text,
-    .elementor-element-3b5d5a28 .elementor-icon-list-text,
-    .elementor-element-65e98505 .elementor-icon-list-text {
-    color: #FFFFFF !important;
+  .elementor-element-43d42567 .elementor-icon-list-text,
+  .elementor-element-3b5d5a28 .elementor-icon-list-text {
+    color: #263746 !important;
     font-family: 'Poppins', Arial, sans-serif !important;
-    font-size: 15px !important;
+    font-size: 14.5px !important;
     font-weight: 500 !important;
+    line-height: 1.45 !important;
+  }
+  .elementor-element-43d42567 .elementor-icon-list-icon svg,
+  .elementor-element-3b5d5a28 .elementor-icon-list-icon svg {
+    fill: #145DA0 !important;
   }
   .elementor-element-65e98505 .elementor-icon-list-text b {
     color: #00E676 !important;
@@ -2262,8 +2282,13 @@
 
   /* PADRONIZAÇÃO TIPOGRÁFICA: TODAS AS HEADLINES POPPINS */
   .hero-gold,
-  .elementor-element-1c699059 .elementor-heading-title .hero-gold {
+  .elementor-element-1c699059 .elementor-heading-title .hero-gold,
+  .elementor-heading-title .hero-gold {
     color: #D5A536 !important;
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-weight: 900 !important;
+    letter-spacing: inherit !important;
+    display: inline !important;
   }
   /* ---------------------------------------------------- */
   .bonus-header-title,
@@ -2289,21 +2314,25 @@
   .elementor-element-21b6d432 b {
     font-family: 'Poppins', Arial, sans-serif !important;
   }
+  .bonus-header-title,
+  .bonus-header-title span,
+  .bonus-header-title * {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-size: clamp(28px, 4vw, 44px) !important;
+    font-weight: 900 !important;
+    color: #103B64 !important;
+    letter-spacing: -0.6px !important;
+    line-height: 1.15 !important;
+    text-transform: uppercase !important;
+  }
   .bonus-header-title {
-      margin: 2px 0 10px 0 !important;
-      padding: 0 !important;
-      font-family: 'Poppins', Arial, sans-serif !important;
-      font-size: clamp(28px, 4vw, 44px) !important;
-      font-weight: 900 !important;
-      color: #103B64 !important;
-      letter-spacing: -0.6px !important;
-      line-height: 1.15 !important;
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      gap: 12px !important;
-      text-transform: uppercase !important;
-    }
+    margin: 2px 0 10px 0 !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
   .bonus-header-eyebrow {
       margin: 0 0 6px 0 !important;
       padding: 0 !important;
@@ -2798,7 +2827,7 @@
 				<div class="elementor-element elementor-element-16a46a24 elementor-widget elementor-widget-heading" data-id="16a46a24" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><svg class="secure-badge-icon" aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 334.8 496 128c0-19.4-11.7-36.9-29.5-44.3zM237.7 348.6l-85-85c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l51.1 51.1 127.8-127.8c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.2 6.2 6.2 16.4 0 22.6L260.3 348.6c-6.2 6.2-16.4 6.2-22.6 0z"/></svg>COMPRA 100% SEGURA E PROTEGIDA</h2>				</div>
 				<div class="elementor-element elementor-element-1c699059 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="1c699059" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default"><span class="hero-gold" style="color: #D5A536 !important;">+100 Projetos</span> de Lagos Ornamentais para Tirar o <span class="hero-gold" style="color: #D5A536 !important;">Lago dos Seus Sonhos</span> do Papel</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default"><span class="hero-gold" style="color: #D5A536 !important; font-family: 'Poppins', Arial, sans-serif !important; font-weight: 900 !important; letter-spacing: inherit !important;">+100 Projetos</span> de Lagos Ornamentais para Tirar o <span class="hero-gold" style="color: #D5A536 !important; font-family: 'Poppins', Arial, sans-serif !important; font-weight: 900 !important; letter-spacing: inherit !important;">Lago dos Seus Sonhos</span> do Papel</h2>				</div>
 				<div class="elementor-element elementor-element-2373437d elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="2373437d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img loading="eager" fetchpriority="high" decoding="async" width="1254" height="1254" src="/mockup-principal-lagos.webp" class="attachment-large size-large" alt="Projetos de Lagos Ornamentais - +100 Projetos Prontos" />															</div>
 				<div class="elementor-element elementor-element-3a23d999 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="3a23d999" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
@@ -2899,9 +2928,9 @@
 					<div data-rocket-location-hash="0d1d122c37e275cae87447b3c2a86443" class="e-con-inner">
 				<div class="bonus-header-wrapper">
 					<p class="bonus-header-eyebrow">E NÃO PARA POR AÍ, VOCÊ AINDA RECEBE</p>
-					<h2 class="bonus-header-title">
-						<span class="bonus-header-gift-icon" aria-hidden="true">🎁</span>
-						<span>4 BÔNUS EXCLUSIVOS</span>
+					<h2 class="bonus-header-title" style="font-family: 'Poppins', Arial, sans-serif !important; font-weight: 900 !important; color: #103B64 !important; text-transform: uppercase !important;">
+						<span class="bonus-header-gift-icon" aria-hidden="true" style="font-size: 1.05em; display: inline-block;">🎁</span>
+						<span style="font-family: 'Poppins', Arial, sans-serif !important; font-weight: 900 !important; color: #103B64 !important; letter-spacing: -0.5px !important;">4 BÔNUS EXCLUSIVOS</span>
 					</h2>
 					<div class="bonus-header-badge-wrapper">
 						<span class="bonus-header-badge">SÓ NO PACOTE COMPLETO</span>
@@ -3120,12 +3149,12 @@
       </p>
     </div>
 
-    <div class="lagos-library-card" style="background: #FFFFFF; border-radius: 22px; border: 1px solid #D9E8F0; box-shadow: 0 10px 32px rgba(16, 59, 100, 0.08); padding: 34px 30px 26px 30px; box-sizing: border-box;">
+    <div class="lagos-library-card" style="max-width: 840px; margin: 0 auto; width: 100%; background: #FFFFFF; border-radius: 20px; border: 1px solid #D9E8F0; box-shadow: 0 10px 32px rgba(16, 59, 100, 0.08); padding: 32px 32px; box-sizing: border-box;">
       <div class="lagos-library-grid" style="display: grid; grid-template-columns: 290px 1fr; gap: 32px; align-items: center;">
         
         <!-- Coluna Esquerda: Mockup + Badge + Texto -->
         <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-          <div style="width: 100%; max-width: 270px; margin-bottom: 14px;">
+          <div style="width: 100%; max-width: 260px; margin-bottom: 14px;">
             <img src="/mockup-principal-lagos.webp" alt="+100 Projetos de Lagos Ornamentais" style="width: 100%; height: auto; display: block; filter: drop-shadow(0 8px 18px rgba(16, 59, 100, 0.14));" />
           </div>
           
@@ -3136,7 +3165,7 @@
           <h3 style="font-family: 'Poppins', Arial, sans-serif; font-size: 16px; font-weight: 800; color: #103B64; margin: 0 0 6px 0; line-height: 1.35;">
             Plano Completo: +100 projetos, não um curso.
           </h3>
-          <p style="font-family: 'Inter', -apple-system, sans-serif; font-size: 13px; color: #52677B; margin: 0; line-height: 1.5; max-width: 280px;">
+          <p style="font-family: 'Inter', -apple-system, sans-serif; font-size: 13px; color: #52677B; margin: 0; line-height: 1.5; max-width: 270px;">
             Explore a biblioteca, compare os modelos e leve sua escolha ao profissional para avaliar a adaptação ao seu terreno.
           </p>
         </div>
@@ -3183,6 +3212,21 @@
   </div>
 </section>
 <style>
+.elementor-element-lagos-library,
+.elementor-element-lagos-library.e-con-boxed {
+  background: #F4F8FA !important;
+  background-color: #F4F8FA !important;
+}
+.elementor-element-lagos-library > .e-con-inner {
+  max-width: 860px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+.elementor-element-lagos-library .lagos-library-card {
+  max-width: 840px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
 @media (max-width: 820px) {
   .elementor-element-lagos-library .lagos-library-grid {
     grid-template-columns: 1fr !important;
