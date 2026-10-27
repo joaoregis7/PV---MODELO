@@ -235,13 +235,14 @@
 .lc-viewport img{-webkit-user-drag:none;user-select:none}
 .elementor-element-1842b7ed .lc-slide{aspect-ratio:900/1272}
 .elementor-element-1842b7ed .lc-slide{overflow:hidden!important;-webkit-clip-path:inset(0 round 12px)!important;clip-path:inset(0 round 12px)!important;background:#FFFFFF!important;border:1px solid #D9E8F0!important}
-.elementor-element-depoimentos-carousel .lc-slide{overflow:hidden!important;-webkit-clip-path:inset(0 round 16px)!important;clip-path:inset(0 round 16px)!important;background:#FFFFFF!important;border:1px solid #D9E8F0!important}
+.elementor-element-depoimentos-carousel .lc-slide{aspect-ratio:900/1600!important;overflow:hidden!important;-webkit-clip-path:inset(0 round 16px)!important;clip-path:inset(0 round 16px)!important;background:#FFFFFF!important;border:4px solid #FFFFFF!important;box-shadow:0 8px 24px rgba(0,0,0,0.18)!important}
+.elementor-element-depoimentos-carousel .lc-slide .swiper-slide-image{object-fit:cover!important;width:100%!important;height:100%!important;border-radius:12px!important;opacity:1!important;visibility:visible!important}
 .elementor-element-1842b7ed .lc-slide .swiper-slide-image{object-fit:cover!important}
 .lc-viewport .lc-slide .swiper-slide-inner,.lc-viewport .lc-slide figure{overflow:hidden!important}
     .depo-wrapper {
     position: relative;
     overflow: hidden;
-    height: 650px;
+    height: 100% !important;
     border-radius: 12px;
     margin: 0 !important;
 }
@@ -2065,7 +2066,8 @@
 
 <style id="custom-dobras-spacing-and-design">
   /* ---------------------------------------------------- */
-  /* PADRONIZAÇÃO TIPOGRÁFICA COM POPPINS                 */
+  /* PADRONIZAÇÃO TIPOGRÁFICA: HEADLINES EM INTER 800     */
+  /* (Padronizada com todas as headlines da página)       */
   /* ---------------------------------------------------- */
   .bonus-header-title,
   .bonus-header-title span,
@@ -2075,117 +2077,323 @@
   .scarcity-timer-heading,
   .timer-num,
   .timer-label,
-  .scarcity-timer-sub,
-  .elementor-element-19b7410c b,
-  .elementor-element-65bf8782 b,
-  .elementor-element-4054a1a3 b,
-  .elementor-element-6d601b65 b {
-    font-family: 'Poppins', Arial, sans-serif !important;
+  .scarcity-timer-sub {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  }
+  .bonus-header-title {
+    font-size: clamp(26px, 4vw, 42px) !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: -0.5px !important;
+    line-height: 1.15 !important;
+    color: #103B64 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    margin: 2px 0 6px 0 !important;
+  }
+  .bonus-header-eyebrow {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    color: #145DA0 !important;
+    margin: 0 !important;
+  }
+  .bonus-header-badge {
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
+    padding: 7px 24px !important;
+    border-radius: 999px !important;
+    background: #145DA0 !important;
+    color: #FFFFFF !important;
   }
 
   /* ---------------------------------------------------- */
-  /* BÔNUS: TÍTULOS EM PRETO E CENTRALIZAÇÃO TOTAL        */
+  /* BÔNUS: OCULTAR CARDZINHO DO CANTO SUPERIOR DIREITO   */
   /* ---------------------------------------------------- */
+  .elementor-element-78083748,
+  .elementor-element-559dc179,
+  .elementor-element-6888b1de,
+  .elementor-element-5a9d2199 {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* BÔNUS: CARDS COM MESMA RÉGUA E ALINHAMENTO PERFEITO  */
+  /* ---------------------------------------------------- */
+  .elementor-element-6de59a84,
+  .elementor-element-12d1fcfc,
+  .elementor-element-5348b210,
+  .elementor-element-19bb3daf {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    border: 1px solid #D9E8F0 !important;
+    border-radius: 18px !important;
+    box-shadow: 0 8px 24px rgba(16, 59, 100, 0.06) !important;
+    padding: 18px 14px 20px 14px !important;
+    height: 100% !important;
+    min-height: 520px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* IMAGENS DOS BÔNUS 100% PADRONIZADAS COM MESMO TAMANHO */
+  .elementor-element-45e73b68,
+  .elementor-element-7bf4d1e6,
+  .elementor-element-2a41bcd2,
+  .elementor-element-6609a07d {
+    width: 100% !important;
+    height: 195px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 10px auto !important;
+    padding: 0 !important;
+  }
+  .elementor-element-45e73b68 img,
+  .elementor-element-7bf4d1e6 img,
+  .elementor-element-2a41bcd2 img,
+  .elementor-element-6609a07d img {
+    width: 180px !important;
+    height: 180px !important;
+    max-width: 180px !important;
+    max-height: 180px !important;
+    object-fit: contain !important;
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    border-radius: 14px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    box-shadow: 0 4px 14px rgba(16, 59, 100, 0.08) !important;
+  }
+
+  /* INNER CONTAINERS DOS CARDS */
+  .elementor-element-57f78ef3,
+  .elementor-element-30fb1654,
+  .elementor-element-48e2281,
+  .elementor-element-7eec4caf {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+
+  /* TÍTULOS DOS BÔNUS EM PRETO E MESMA ALTURA */
   .elementor-element-19b7410c,
   .elementor-element-65bf8782,
-  .elementor-element-4054a1a3,
-  .elementor-element-6d601b65 {
+  .elementor-element-13b62e04,
+  .elementor-element-21b6d432 {
     text-align: center !important;
-    margin: 8px 0 6px 0 !important;
+    height: 28px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 0 6px 0 !important;
   }
   .elementor-element-19b7410c b,
   .elementor-element-65bf8782 b,
-  .elementor-element-4054a1a3 b,
-  .elementor-element-6d601b65 b {
+  .elementor-element-13b62e04 b,
+  .elementor-element-21b6d432 b {
     color: #000000 !important;
+    font-family: 'Poppins', Arial, sans-serif !important;
     font-size: 19px !important;
     font-weight: 800 !important;
-    line-height: 1.25 !important;
+    line-height: 1.2 !important;
     display: block !important;
     text-align: center !important;
   }
+
+  /* DESCRIÇÕES COM MESMA ALTURA (58px) PARA ALINHAR A RÉGUA */
   .elementor-element-baf9138,
   .elementor-element-211ec2c4,
   .elementor-element-409c9bdd,
   .elementor-element-46c35dbc {
     text-align: center !important;
-    margin: 4px 0 10px 0 !important;
+    height: 58px !important;
+    min-height: 58px !important;
+    max-height: 58px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 0 12px 0 !important;
+    padding: 0 4px !important;
   }
   .elementor-element-baf9138 p,
   .elementor-element-211ec2c4 p,
   .elementor-element-409c9bdd p,
   .elementor-element-46c35dbc p {
     text-align: center !important;
-    font-size: 14px !important;
-    line-height: 1.4 !important;
+    font-size: 13.5px !important;
+    line-height: 1.35 !important;
+    color: #52677B !important;
+    margin: 0 !important;
   }
+
+  /* CHECKLISTS ALINHADOS À ESQUERDA (CONFORME SOLICITADO NO ÁUDIO) */
   .elementor-element-52d4a64d,
   .elementor-element-120c71b6,
   .elementor-element-3c8c035e,
   .elementor-element-19f1fb95 {
-    text-align: center !important;
+    text-align: left !important;
     width: 100% !important;
     display: flex !important;
-    justify-content: center !important;
-    margin-bottom: 12px !important;
+    justify-content: flex-start !important;
+    flex-grow: 1 !important;
+    min-height: 125px !important;
+    margin: 0 0 16px 0 !important;
+    padding: 0 8px !important;
+    box-sizing: border-box !important;
   }
   .elementor-element-52d4a64d .elementor-icon-list-items,
   .elementor-element-120c71b6 .elementor-icon-list-items,
   .elementor-element-3c8c035e .elementor-icon-list-items,
   .elementor-element-19f1fb95 .elementor-icon-list-items {
-    display: inline-flex !important;
+    display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
+    align-items: flex-start !important;
+    text-align: left !important;
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
-    gap: 6px !important;
+    gap: 7px !important;
   }
   .elementor-element-52d4a64d .elementor-icon-list-item,
   .elementor-element-120c71b6 .elementor-icon-list-item,
   .elementor-element-3c8c035e .elementor-icon-list-item,
   .elementor-element-19f1fb95 .elementor-icon-list-item {
-    justify-content: center !important;
-    text-align: center !important;
-    font-size: 13.5px !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    font-size: 13px !important;
+    line-height: 1.35 !important;
+    color: #52677B !important;
   }
+  .elementor-element-52d4a64d .elementor-icon-list-icon,
+  .elementor-element-120c71b6 .elementor-icon-list-icon,
+  .elementor-element-3c8c035e .elementor-icon-list-icon,
+  .elementor-element-19f1fb95 .elementor-icon-list-icon {
+    display: inline-flex !important;
+    margin-right: 8px !important;
+    margin-top: 2px !important;
+  }
+
+  /* CARDZINHO DE VALOR RISCADO + GRÁTIS NA MESMA RÉGUA HORIZONTAL */
   .elementor-element-40b03d4a,
   .elementor-element-394fa0c4,
   .elementor-element-1459bc2d,
   .elementor-element-5661fd48 {
-    text-align: center !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
     margin-top: auto !important;
+    width: 100% !important;
+    display: block !important;
   }
   .elementor-element-40b03d4a .elementor-heading-title,
   .elementor-element-394fa0c4 .elementor-heading-title,
   .elementor-element-1459bc2d .elementor-heading-title,
   .elementor-element-5661fd48 .elementor-heading-title {
+    width: 100% !important;
+    height: 44px !important;
+    line-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     text-align: center !important;
     background: #145DA0 !important;
     border-radius: 10px !important;
-    padding: 11px 14px !important;
+    padding: 0 10px !important;
     font-size: 15px !important;
     box-shadow: 0 4px 12px rgba(20, 93, 160, 0.2) !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
   }
 
-  /* IMAGENS DOS BÔNUS COM FUNDO BRANCO E TAMANHO ELEGANTE */
-  .elementor-element-45e73b68 img,
-  .elementor-element-2fae7f9a img,
-  .elementor-element-2b9a7167 img,
-  .elementor-element-15cf492b img {
+  /* ---------------------------------------------------- */
+  /* CARROSSEL DE DEPOIMENTOS: MESMO ESTILO DO 1842b7ed   */
+  /* BORDAS BRANCAS E FORMATO PADRONIZADO                 */
+  /* ---------------------------------------------------- */
+  .elementor-element-depoimentos-carousel .lc-slide,
+  .elementor-element-depoimentos-carousel .swiper-slide {
+    aspect-ratio: 900 / 1600 !important;
     background: #FFFFFF !important;
     background-color: #FFFFFF !important;
-    border-radius: 14px !important;
-    max-width: 200px !important;
-    width: 78% !important;
+    border: 4px solid #FFFFFF !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18) !important;
+    overflow: hidden !important;
+    -webkit-clip-path: inset(0 round 16px) !important;
+    clip-path: inset(0 round 16px) !important;
+  }
+  .elementor-element-depoimentos-carousel .swiper-slide-inner,
+  .elementor-element-depoimentos-carousel .depo-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+    background: #FFFFFF !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .elementor-element-depoimentos-carousel .swiper-slide-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
     display: block !important;
-    margin: 4px auto 8px auto !important;
-    object-fit: contain !important;
-    box-shadow: 0 4px 14px rgba(16, 59, 100, 0.08) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .elementor-element-depoimentos-carousel .swiper-lazy {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* GARANTIA 30 DIAS: LINHAS ALINHADAS E PADRONIZADAS    */
+  /* Elimina bordas duplas e deixa todas as linhas em 1px */
+  /* ---------------------------------------------------- */
+  .elementor-element-4f4f0ec4 .elementor-icon-list-item::after,
+  .elementor-4874 .elementor-element.elementor-element-4f4f0ec4 .elementor-icon-list-item:not(:last-child):after,
+  .elementor-element-4af4d716 .elementor-icon-list-item::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+  }
+  .elementor-element-4af4d716 .elementor-icon-list-items,
+  .elementor-element-4f4f0ec4 .elementor-icon-list-items {
+    background: #F5FAFD !important;
+    border: 1px solid #D9E8F0 !important;
+    border-radius: 16px !important;
+    padding: 16px 20px !important;
+  }
+  .elementor-element-4af4d716 .elementor-icon-list-item,
+  .elementor-element-4f4f0ec4 .elementor-icon-list-item {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #D9E8F0 !important;
+    padding: 12px 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  .elementor-element-4af4d716 .elementor-icon-list-item:last-child,
+  .elementor-element-4f4f0ec4 .elementor-icon-list-item:last-child {
+    border-bottom: none !important;
+    padding-bottom: 4px !important;
   }
 
   /* ---------------------------------------------------- */
@@ -2351,7 +2559,7 @@
     --padding-bottom: 36px !important;
   }
 
-  /* 10. COMO FUNCIONA O ACESSO (DESTACADO NA SOLICITAÇÃO DO USUÁRIO) */
+  /* 10. COMO FUNCIONA O ACESSO */
   .elementor-element-36c2edd4 {
     padding-top: 36px !important;
     padding-bottom: 36px !important;
@@ -2366,7 +2574,7 @@
     margin-bottom: 0 !important;
   }
 
-  /* 11. PERGUNTAS FREQUENTES (DESTACADO NA SOLICITAÇÃO DO USUÁRIO) */
+  /* 11. PERGUNTAS FREQUENTES */
   .elementor-element-6d6feb5b {
     padding-top: 36px !important;
     padding-bottom: 38px !important;
@@ -2739,13 +2947,33 @@
 					<h2 class="elementor-heading-title elementor-size-default" style="text-align: center; color: #103B64; font-size: 36px; text-transform: uppercase;">NOSSOS CLIENTES APROVAM O MATERIAL</h2>
 				</div>
 				<div class="elementor-element elementor-element-depoimentos-carousel elementor-widget__width-inherit elementor-widget elementor-widget-image-carousel" data-id="depoimentos-carousel" data-element_type="widget" data-e-type="widget" data-settings='{"slides_to_show":"5","lazyload":"yes","autoplay_speed":0,"speed":5000,"slides_to_show_mobile":"1","slides_to_show_tablet":"3","navigation":"none","autoplay":"yes","infinite":"yes","image_spacing_custom":{"unit":"px","size":20,"sizes":[]},"image_spacing_custom_tablet":{"unit":"px","size":"","sizes":[]},"image_spacing_custom_mobile":{"unit":"px","size":"","sizes":[]}}' data-widget_type="image-carousel.default" style="">
-					<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="ltr">
+					<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="rtl">
 						<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 5"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy depo-img-contain" src="/depoimento1.webp" alt="Depoimento 1" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 5"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy depo-img-contain" src="/depoimento2.webp" alt="Depoimento 2" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 5"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy depo-img-contain" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 5"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy depo-img-contain" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 5"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy depo-img-contain" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento1.webp" data-src="/depoimento1.webp" alt="Depoimento 1"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento2.webp" data-src="/depoimento2.webp" alt="Depoimento 2"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento3.webp" data-src="/depoimento3.webp" alt="Depoimento 3"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento4.webp" data-src="/depoimento4.webp" alt="Depoimento 4"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento5.webp" data-src="/depoimento5.webp" alt="Depoimento 5"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento1.webp" data-src="/depoimento1.webp" alt="Depoimento 1"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento2.webp" data-src="/depoimento2.webp" alt="Depoimento 2"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento3.webp" data-src="/depoimento3.webp" alt="Depoimento 3"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento4.webp" data-src="/depoimento4.webp" alt="Depoimento 4"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento5.webp" data-src="/depoimento5.webp" alt="Depoimento 5"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento1.webp" data-src="/depoimento1.webp" alt="Depoimento 1"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento2.webp" data-src="/depoimento2.webp" alt="Depoimento 2"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento3.webp" data-src="/depoimento3.webp" alt="Depoimento 3"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento4.webp" data-src="/depoimento4.webp" alt="Depoimento 4"><div class="swiper-lazy-preloader"></div></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento5.webp" data-src="/depoimento5.webp" alt="Depoimento 5"><div class="swiper-lazy-preloader"></div></figure></div>
+						</div>
+					</div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento1.webp" alt="Depoimento 1" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento2.webp" alt="Depoimento 2" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 de 15"><figure class="swiper-slide-inner depo-wrapper"><img loading="lazy" decoding="async" class="swiper-slide-image swiper-lazy" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
 						</div>
 					</div>
 				</div>
@@ -3280,8 +3508,8 @@ document.addEventListener("DOMContentLoaded", function() {
       offset=norm(offset);
     }
     function norm(o){if(setW<=0)return o;if(rtl){o=((o%setW)+setW)%setW;}else{o=o%setW;if(o>0)o-=setW;else if(o<=-setW)o+=setW;}return o;}
-    function loadImg(slide){var img=slide.querySelector('img[data-src]');if(img&&!img.getAttribute('src')){img.setAttribute('src',img.getAttribute('data-src'));}}
-    function setImg(slide){var img=slide.querySelector('img[data-src]');if(!img)return;img.setAttribute('loading','eager');if(!img.getAttribute('src')){img.setAttribute('src',img.getAttribute('data-src'));img.addEventListener('load',function(){try{slide.style.transform='translateZ(0)';void slide.offsetHeight;}catch(_){}},{once:true});}}
+    function loadImg(slide){var img=slide.querySelector('img');if(img){if(!img.getAttribute('src')&&img.getAttribute('data-src')){img.setAttribute('src',img.getAttribute('data-src'));}img.classList.add('swiper-lazy-loaded');img.style.opacity='1';img.style.visibility='visible';}}
+    function setImg(slide){var img=slide.querySelector('img[data-src]');if(!img)return;img.setAttribute('loading','eager');if(!img.getAttribute('src')){img.setAttribute('src',img.getAttribute('data-src'));}img.classList.add('swiper-lazy-loaded');img.style.opacity='1';img.style.visibility='visible';img.addEventListener('load',function(){try{slide.style.transform='translateZ(0)';void slide.offsetHeight;}catch(_){}},{once:true});}
     function idxFromOffset(){if(unit<=0||setW<=0||n<=0)return 0;var k=Math.round((rtl?offset:-offset)/unit)%n;return (k+n)%n;}
     function ensureWindow(){if(unit<=0||n<=0)return;var ci=idxFromOffset();lastIdx=ci;var all=track.children;for(var d=-1;d<=3;d++){var j=((ci+d)%n+n)%n;if(all[j])setImg(all[j]);if(all[j+n])setImg(all[j+n]);}}
     function onVis(entries){
