@@ -2062,6 +2062,354 @@
     }
 
 </style>
+
+<style id="custom-dobras-spacing-and-design">
+  /* ---------------------------------------------------- */
+  /* PADRONIZAÇÃO TIPOGRÁFICA COM POPPINS                 */
+  /* ---------------------------------------------------- */
+  .bonus-header-title,
+  .bonus-header-title span,
+  .bonus-header-eyebrow,
+  .bonus-header-badge,
+  .scarcity-timer-eyebrow,
+  .scarcity-timer-heading,
+  .timer-num,
+  .timer-label,
+  .scarcity-timer-sub,
+  .elementor-element-19b7410c b,
+  .elementor-element-65bf8782 b,
+  .elementor-element-4054a1a3 b,
+  .elementor-element-6d601b65 b {
+    font-family: 'Poppins', Arial, sans-serif !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* BÔNUS: TÍTULOS EM PRETO E CENTRALIZAÇÃO TOTAL        */
+  /* ---------------------------------------------------- */
+  .elementor-element-19b7410c,
+  .elementor-element-65bf8782,
+  .elementor-element-4054a1a3,
+  .elementor-element-6d601b65 {
+    text-align: center !important;
+    margin: 8px 0 6px 0 !important;
+  }
+  .elementor-element-19b7410c b,
+  .elementor-element-65bf8782 b,
+  .elementor-element-4054a1a3 b,
+  .elementor-element-6d601b65 b {
+    color: #000000 !important;
+    font-size: 19px !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
+    display: block !important;
+    text-align: center !important;
+  }
+  .elementor-element-baf9138,
+  .elementor-element-211ec2c4,
+  .elementor-element-409c9bdd,
+  .elementor-element-46c35dbc {
+    text-align: center !important;
+    margin: 4px 0 10px 0 !important;
+  }
+  .elementor-element-baf9138 p,
+  .elementor-element-211ec2c4 p,
+  .elementor-element-409c9bdd p,
+  .elementor-element-46c35dbc p {
+    text-align: center !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+  .elementor-element-52d4a64d,
+  .elementor-element-120c71b6,
+  .elementor-element-3c8c035e,
+  .elementor-element-19f1fb95 {
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 12px !important;
+  }
+  .elementor-element-52d4a64d .elementor-icon-list-items,
+  .elementor-element-120c71b6 .elementor-icon-list-items,
+  .elementor-element-3c8c035e .elementor-icon-list-items,
+  .elementor-element-19f1fb95 .elementor-icon-list-items {
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 6px !important;
+  }
+  .elementor-element-52d4a64d .elementor-icon-list-item,
+  .elementor-element-120c71b6 .elementor-icon-list-item,
+  .elementor-element-3c8c035e .elementor-icon-list-item,
+  .elementor-element-19f1fb95 .elementor-icon-list-item {
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 13.5px !important;
+  }
+  .elementor-element-40b03d4a,
+  .elementor-element-394fa0c4,
+  .elementor-element-1459bc2d,
+  .elementor-element-5661fd48 {
+    text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: auto !important;
+  }
+  .elementor-element-40b03d4a .elementor-heading-title,
+  .elementor-element-394fa0c4 .elementor-heading-title,
+  .elementor-element-1459bc2d .elementor-heading-title,
+  .elementor-element-5661fd48 .elementor-heading-title {
+    text-align: center !important;
+    background: #145DA0 !important;
+    border-radius: 10px !important;
+    padding: 11px 14px !important;
+    font-size: 15px !important;
+    box-shadow: 0 4px 12px rgba(20, 93, 160, 0.2) !important;
+  }
+
+  /* IMAGENS DOS BÔNUS COM FUNDO BRANCO E TAMANHO ELEGANTE */
+  .elementor-element-45e73b68 img,
+  .elementor-element-2fae7f9a img,
+  .elementor-element-2b9a7167 img,
+  .elementor-element-15cf492b img {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    border-radius: 14px !important;
+    max-width: 200px !important;
+    width: 78% !important;
+    display: block !important;
+    margin: 4px auto 8px auto !important;
+    object-fit: contain !important;
+    box-shadow: 0 4px 14px rgba(16, 59, 100, 0.08) !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* PULSO LENTO E BRILHO RELUZENTE NOS BOTÕES CTA VERDES */
+  /* ---------------------------------------------------- */
+  @keyframes pulsarLentoCTA {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 10px 24px rgba(49, 178, 110, 0.38);
+    }
+    50% {
+      transform: scale(1.035);
+      box-shadow: 0 14px 32px rgba(49, 178, 110, 0.65);
+    }
+  }
+
+  @keyframes passarBrilhoReluzCTA {
+    0% {
+      transform: translateX(-160%) skewX(-22deg);
+    }
+    28% {
+      transform: translateX(260%) skewX(-22deg);
+    }
+    100% {
+      transform: translateX(260%) skewX(-22deg);
+    }
+  }
+
+  #cta-hero-completo,
+  #cta-conteudo-completo,
+  #cta-bonus-completo,
+  #bonus-cta-container .elementor-button,
+  #cta-acesso-completo,
+  .elementor-element-49832822 .elementor-button,
+  #cta-faq-completo,
+  .faq-final-cta .elementor-button {
+    animation: pulsarLentoCTA 2.8s ease-in-out infinite !important;
+    background: linear-gradient(135deg, #3cc178 0%, #31b26e 100%) !important;
+    background-color: #31b26e !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  #cta-hero-completo::after,
+  #cta-conteudo-completo::after,
+  #cta-bonus-completo::after,
+  #bonus-cta-container .elementor-button::after,
+  #cta-acesso-completo::after,
+  .elementor-element-49832822 .elementor-button::after,
+  #cta-faq-completo::after,
+  .faq-final-cta .elementor-button::after {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 45% !important;
+    height: 100% !important;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.75) 50%,
+      rgba(255, 255, 255, 0) 100%
+    ) !important;
+    transform: translateX(-160%) skewX(-22deg) !important;
+    animation: passarBrilhoReluzCTA 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
+    pointer-events: none !important;
+    z-index: 10 !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* REDUÇÃO E HARMONIZAÇÃO DO ESPAÇAMENTO ENTRE DOBRAS   */
+  /* ---------------------------------------------------- */
+  
+  /* 1. HERO */
+  .elementor-element-4c6be628,
+  html body div.elementor-element-4c6be628 {
+    padding-top: 24px !important;
+    padding-bottom: 26px !important;
+    --padding-top: 24px !important;
+    --padding-bottom: 26px !important;
+  }
+
+  /* 2. BARRA DE VÍDEO / INTRO */
+  .elementor-element-22543443 {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+    --padding-top: 22px !important;
+    --padding-bottom: 22px !important;
+  }
+
+  /* 3. TUDO O QUE VOCÊ PRECISA (4 CARDS) */
+  .elementor-element-790607e2 {
+    padding-top: 36px !important;
+    padding-bottom: 36px !important;
+    --padding-top: 36px !important;
+    --padding-bottom: 36px !important;
+  }
+  .elementor-element-5f2c2b4d .elementor-heading-title {
+    margin-bottom: 20px !important;
+  }
+
+  /* 4. DOBRA DE BÔNUS */
+  .elementor-element-6f9fdc18 {
+    padding-top: 36px !important;
+    padding-bottom: 38px !important;
+    --padding-top: 36px !important;
+    --padding-bottom: 38px !important;
+  }
+  .bonus-header-wrapper {
+    margin: 0 auto 24px auto !important;
+  }
+
+  /* 5. CRONÔMETRO DE ESCASSEZ */
+  .scarcity-timer-section {
+    padding: 26px 20px 28px !important;
+  }
+  .scarcity-timer-heading {
+    margin: 0 0 16px 0 !important;
+  }
+  .scarcity-timer-display {
+    margin: 0 0 16px 0 !important;
+  }
+
+  /* 6. ESTE MATERIAL É IDEAL PARA VOCÊ QUE DESEJA */
+  .elementor-element-760ddb4b {
+    padding-top: 36px !important;
+    padding-bottom: 38px !important;
+    --padding-top: 36px !important;
+    --padding-bottom: 38px !important;
+  }
+  .elementor-element-760ddb4b .elementor-heading-title {
+    margin-bottom: 22px !important;
+  }
+
+  /* 7. DEPOIMENTOS */
+  .elementor-element-depoimentos-container {
+    padding: 36px 0 38px !important;
+  }
+  .elementor-element-depoimentos-container > .e-con-inner {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .elementor-element-depoimentos-title {
+    margin-bottom: 22px !important;
+  }
+
+  /* 8. OFERTA / PLANOS */
+  .elementor-element-5cc62ff9 {
+    padding-top: 36px !important;
+    padding-bottom: 40px !important;
+    --padding-top: 36px !important;
+    --padding-bottom: 40px !important;
+  }
+  .elementor-element-5e030fc .elementor-heading-title {
+    margin-bottom: 20px !important;
+  }
+
+  /* 9. GARANTIA 30 DIAS */
+  .elementor-element-4af4d716 {
+    padding: 36px 24px !important;
+    --padding-top: 36px !important;
+    --padding-bottom: 36px !important;
+  }
+
+  /* 10. COMO FUNCIONA O ACESSO (DESTACADO NA SOLICITAÇÃO DO USUÁRIO) */
+  .elementor-element-36c2edd4 {
+    padding-top: 36px !important;
+    padding-bottom: 36px !important;
+    --padding-top: 36px !important;
+    --padding-bottom: 36px !important;
+  }
+  .elementor-element-fa07ab3 .elementor-heading-title {
+    margin-bottom: 22px !important;
+  }
+  .elementor-element-49832822 {
+    margin-top: 26px !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* 11. PERGUNTAS FREQUENTES (DESTACADO NA SOLICITAÇÃO DO USUÁRIO) */
+  .elementor-element-6d6feb5b {
+    padding-top: 36px !important;
+    padding-bottom: 38px !important;
+    --padding-top: 36px !important;
+    --padding-bottom: 38px !important;
+    --gap: 20px !important;
+    gap: 20px !important;
+  }
+  .elementor-element-472cc342 .elementor-heading-title {
+    margin-bottom: 18px !important;
+  }
+  .faq-final-cta {
+    margin-top: 24px !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* 12. RODAPÉ */
+  .elementor-element-2edc39ef {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    --padding-top: 20px !important;
+    --padding-bottom: 20px !important;
+  }
+
+  /* ---------------------------------------------------- */
+  /* AJUSTES RESPONSIVOS MOBILE                           */
+  /* ---------------------------------------------------- */
+  @media (max-width: 767px) {
+    .elementor-element-4c6be628 { padding-top: 18px !important; padding-bottom: 20px !important; }
+    .elementor-element-22543443 { padding-top: 16px !important; padding-bottom: 16px !important; }
+    .elementor-element-790607e2 { padding-top: 26px !important; padding-bottom: 26px !important; }
+    .elementor-element-6f9fdc18 { padding-top: 28px !important; padding-bottom: 28px !important; }
+    .scarcity-timer-section { padding: 22px 14px 24px !important; }
+    .elementor-element-760ddb4b { padding-top: 28px !important; padding-bottom: 28px !important; }
+    .elementor-element-depoimentos-container { padding: 28px 0 30px !important; }
+    .elementor-element-5cc62ff9 { padding-top: 28px !important; padding-bottom: 30px !important; }
+    .elementor-element-4af4d716 { padding: 28px 16px !important; }
+    .elementor-element-36c2edd4 { padding-top: 28px !important; padding-bottom: 28px !important; }
+    .elementor-element-6d6feb5b { padding-top: 28px !important; padding-bottom: 30px !important; }
+    .elementor-element-2edc39ef { padding-top: 16px !important; padding-bottom: 16px !important; }
+  }
+</style>
+
 </head>
 <body class="wp-singular page-template page-template-elementor_canvas page page-id-4874 wp-embed-responsive wp-theme-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.0 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-4874">
 
@@ -2220,7 +2568,7 @@
 						</ul>
 						</div>
 				<div class="elementor-element elementor-element-40b03d4a e-transform elementor-widget elementor-widget-heading" data-id="40b03d4a" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Valor: <font><s>R$ 37</s></font> <b>GRÁTIS</b></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Valor: <s style="color: #E53E3E !important; font-weight: 800 !important; text-decoration: line-through !important;">R$ 17</s> <b style="color: #22C55E !important; font-weight: 900 !important;">GRÁTIS</b></h2>				</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-12d1fcfc e-con-full e-flex e-con e-child" data-id="12d1fcfc" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2254,7 +2602,7 @@
 						</ul>
 						</div>
 				<div class="elementor-element elementor-element-394fa0c4 e-transform elementor-widget elementor-widget-heading" data-id="394fa0c4" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Valor: <font><s>R$ 17</s></font> <b>GRÁTIS</b></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Valor: <s style="color: #E53E3E !important; font-weight: 800 !important; text-decoration: line-through !important;">R$ 27</s> <b style="color: #22C55E !important; font-weight: 900 !important;">GRÁTIS</b></h2>				</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-5348b210 e-con-full e-flex e-con e-child" data-id="5348b210" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2288,7 +2636,7 @@
 						</ul>
 						</div>
 				<div class="elementor-element elementor-element-1459bc2d e-transform elementor-widget elementor-widget-heading" data-id="1459bc2d" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Valor: <font><s>R$ 47</s></font> <b>GRÁTIS</b></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Valor: <s style="color: #E53E3E !important; font-weight: 800 !important; text-decoration: line-through !important;">R$ 37</s> <b style="color: #22C55E !important; font-weight: 900 !important;">GRÁTIS</b></h2>				</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-19bb3daf e-con-full e-flex e-con e-child" data-id="19bb3daf" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -2322,7 +2670,7 @@
 						</ul>
 						</div>
 				<div class="elementor-element elementor-element-5661fd48 e-transform elementor-widget elementor-widget-heading" data-id="5661fd48" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">Valor: <font><s>R$ 27</s></font> <b>GRÁTIS</b></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Valor: <s style="color: #E53E3E !important; font-weight: 800 !important; text-decoration: line-through !important;">R$ 37</s> <b style="color: #22C55E !important; font-weight: 900 !important;">GRÁTIS</b></h2>				</div>
 				</div>
 				</div>
 		</div>
@@ -2359,29 +2707,29 @@
 		<div class="elementor-element elementor-element-fe1d3b1 e-con-full e-flex e-con e-child" data-id="fe1d3b1" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-2f1b1a79 e-con-full e-transform e-flex e-con e-child" data-id="2f1b1a79" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}">
 				<div class="elementor-element elementor-element-5e999f0b elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="5e999f0b" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">AUMENTAR A POSTURA</h3><p class="elementor-image-box-description">Ofereça uma fonte natural de proteína para estimular a produção de ovos.</p></div></div>				</div>
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">TER SEU PRÓPRIO LAGO ORNAMENTAL</h3><p class="elementor-image-box-description">Transforme seu quintal ou chácara em um espaço bonito e aconchegante.</p></div></div>				</div>
 				</div>
 		<div class="elementor-element elementor-element-60b5dd09 e-con-full e-transform e-flex e-con e-child" data-id="60b5dd09" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}">
 				<div class="elementor-element elementor-element-2917132b elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="2917132b" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">ACELERAR A ENGORDA</h3><p class="elementor-image-box-description">Ajude suas aves e peixes a se desenvolverem melhor com uma alimentação mais nutritiva.</p></div></div>				</div>
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">ECONOMIZAR NA CONSTRUÇÃO</h3><p class="elementor-image-box-description">Planeje sua obra e evite gastar dinheiro com materiais desnecessários.</p></div></div>				</div>
 				</div>
 		<div class="elementor-element elementor-element-b09ac7 e-con-full e-transform e-flex e-con e-child" data-id="b09ac7" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}">
 				<div class="elementor-element elementor-element-2a05763b elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="2a05763b" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">ECONOMIZAR COM RAÇÃO</h3><p class="elementor-image-box-description">Produza alimento vivo em casa e reduza os gastos com a alimentação da criação.</p></div></div>				</div>
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">ESCOLHER O MODELO IDEAL</h3><p class="elementor-image-box-description">Encontre entre +100 projetos o lago perfeito para seu espaço e orçamento.</p></div></div>				</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-57ee10e8 e-con-full e-flex e-con e-child" data-id="57ee10e8" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-1099ab97 e-con-full e-transform e-flex e-con e-child" data-id="1099ab97" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}">
 				<div class="elementor-element elementor-element-5018bbc2 elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="5018bbc2" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">FORTALECER SEUS ANIMAIS</h3><p class="elementor-image-box-description">Melhore a nutrição de galinhas, codornas, peixes, répteis e outros animais.</p></div></div>				</div>
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">CONSTRUIR MESMO SENDO INICIANTE</h3><p class="elementor-image-box-description">Aprenda com projetos ilustrados e videoaulas práticas do básico ao avançado.</p></div></div>				</div>
 				</div>
 		<div class="elementor-element elementor-element-653ffa3a e-con-full e-transform e-flex e-con e-child" data-id="653ffa3a" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}">
 				<div class="elementor-element elementor-element-3a675bc9 elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="3a675bc9" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">REDUZIR PERDAS NA CRIAÇÃO</h3><p class="elementor-image-box-description">Aprenda a oferecer a quantidade certa e evite erros que prejudicam o desenvolvimento.</p></div></div>				</div>
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">EVITAR ERROS E VAZAMENTOS</h3><p class="elementor-image-box-description">Conheça os cuidados essenciais para construir com mais segurança e tranquilidade.</p></div></div>				</div>
 				</div>
 		<div class="elementor-element elementor-element-68b1d16 e-con-full e-transform e-flex e-con e-child" data-id="68b1d16" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}">
 				<div class="elementor-element elementor-element-74882d39 elementor-position-left elementor-vertical-align-middle elementor-widget elementor-widget-image-box" data-id="74882d39" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
-					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">CRIAR E VENDER TENÉBRIOS</h3><p class="elementor-image-box-description">Monte sua produção, abasteça sua criação e ainda transforme o excedente em renda.</p></div></div>				</div>
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="512" height="512" src="/icon-check-mark.webp" class="attachment-full size-full wp-image-2837 perfmatters-lazy" alt    data-src="/icon-check-mark.webp" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">TER UM LAGO BONITO E BEM CUIDADO</h3><p class="elementor-image-box-description">Aprenda a cuidar da água, das plantas e dos equipamentos para manter seu lago sempre bonito.</p></div></div>				</div>
 				</div>
 				</div>
 					</div>
@@ -2596,32 +2944,32 @@
 															<img decoding="async" width="1024" height="683" src="/selogarantia-512.webp" class="attachment-large size-large wp-image-2844 perfmatters-lazy" alt="Selo de garantia de 30 dias"    data-src="/selogarantia-512.webp" />															</div>
 		<div class="elementor-element elementor-element-43c4d464 e-con-full e-flex e-con e-child" data-id="43c4d464" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-31899374 elementor-widget elementor-widget-heading" data-id="31899374" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default">TESTE POR 30 DIAS COM RISCO ZERO</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">TESTE POR 30 DIAS COM RISCO ZERO!</h2>				</div>
 				<div class="elementor-element elementor-element-26b0d3c1 elementor-widget elementor-widget-text-editor" data-id="26b0d3c1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p><span style="font-weight: 400;">Você terá 30 dias completos para acessar o material, conhecer o método e começar a aplicar as orientações na construção do seu lago ornamental.</span></p><p><span style="font-weight: 400;">Se durante esse período você perceber que:</span></p>								</div>
+									<p><span style="font-weight: 400;">Você terá 30 dias completos para explorar os +100 projetos, assistir às videoaulas e descobrir como tirar o lago dos seus sonhos do papel.</span></p><p><span style="font-weight: 400;">Se durante esse período você perceber que:</span></p>								</div>
 				<div class="elementor-element elementor-element-4f4f0ec4 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="4f4f0ec4" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
 							<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">O conteúdo não atende ao que você esperava;</span>
+										<span class="elementor-icon-list-text">Os projetos não atendem às suas expectativas;</span>
 									</li>
 								<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">O método não faz sentido para o seu projeto;</span>
+										<span class="elementor-icon-list-text">As orientações não são adequadas ao que você deseja construir;</span>
 									</li>
 								<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Ou simplesmente não quiser continuar com o produto;</span>
+										<span class="elementor-icon-list-text">Ou simplesmente decidir que o material não é para você.</span>
 									</li>
 						</ul>
 						</div>
 				<div class="elementor-element elementor-element-599c25cc elementor-widget elementor-widget-text-editor" data-id="599c25cc" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p><span style="font-weight: 400;">👉 Basta solicitar o reembolso dentro do prazo. Sem burocracia e sem precisar justificar sua decisão.</span></p>								</div>
+									<p><span style="font-weight: 400;">👉 Basta solicitar seu reembolso dentro dos 30 dias. Sem burocracia e sem precisar justificar sua decisão.</span></p>								</div>
 				<div class="elementor-element elementor-element-4a020f7 elementor-widget elementor-widget-text-editor" data-id="4a020f7" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p><span style="font-weight: 400;">Nossa garantia existe para que você possa conhecer o passo a passo com tranquilidade e decidir por conta própria. Se o material não ajudar você a iniciar, organizar ou melhorar sua criação, o risco fica totalmente do nosso lado.</span></p>								</div>
+									<p><span style="font-weight: 400;">Queremos que você tenha total tranquilidade para conhecer os projetos, explorar as videoaulas e planejar seu lago.<br><br><b>Se o material não atender às suas expectativas, devolvemos 100% do seu dinheiro. O risco é todo nosso!</b></span></p>								</div>
 				</div>
 					</div>
 				</div>
@@ -2637,10 +2985,10 @@
 <div class="access-icon access-icon--mail"><span class="access-emoji" aria-hidden="true">📩</span></div><h3>2. RECEBA O MATERIAL</h3><p>Você receberá as instruções de acesso pelo e-mail e WhatsApp cadastrados durante a compra.</p>
 				</div>
 		<div class="elementor-element elementor-element-129aed62 access-flow-card e-con-full e-flex e-con e-child" data-id="129aed62" data-element_type="container" data-e-type="container">
-<div class="access-icon access-icon--book"><span class="access-emoji" aria-hidden="true">📚</span></div><h3>3. ACESSE TODO O CONTEÚDO</h3><p>Abra o material principal e os quatro bônus pelo celular, tablet ou computador.</p><ul class="access-list"><li>Guia completo de criação</li><li>Checklist da Obra</li><li>Calculadora de Energia</li><li>Guia de Filtragem</li><li>Manual de Manutenção</li></ul>
+<div class="access-icon access-icon--book"><span class="access-emoji" aria-hidden="true">📚</span></div><h3>3. ACESSE TODO O CONTEÚDO</h3><p>Abra o material principal com +100 projetos e os quatro bônus pelo celular, tablet ou computador.</p><ul class="access-list"><li>+100 Projetos Detalhados</li><li>Checklist da Obra</li><li>Calculadora de Energia</li><li>Guia de Filtragem</li><li>Manual de Manutenção</li></ul>
 				</div>
 		<div class="elementor-element elementor-element-264e09d3 access-flow-card e-con-full e-flex e-con e-child" data-id="264e09d3" data-element_type="container" data-e-type="container">
-<div class="access-icon access-icon--package"><span class="access-emoji" aria-hidden="true">📦</span></div><h3>4. MONTE SEU CRIATÓRIO</h3><p>Siga o passo a passo para organizar as caixas, cuidar dos tenébrios e iniciar seus primeiros ciclos.</p><ul class="access-list"><li>Separe os materiais</li><li>Prepare corretamente o ambiente</li><li>Acompanhe cada fase da criação</li><li>Evite os erros mais comuns</li></ul>
+<div class="access-icon access-icon--package"><span class="access-emoji" aria-hidden="true">📦</span></div><h3>4. CONSTRUA SEU LAGO DOS SONHOS</h3><p>Siga o passo a passo para planejar, escavar, impermeabilizar e montar seu lago com tranquilidade.</p><ul class="access-list"><li>Escolha o modelo ideal</li><li>Separe materiais e ferramentas</li><li>Acompanhe o passo a passo e videoaulas</li><li>Evite erros e vazamentos</li></ul>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-49832822 e-transform elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="49832822" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.05,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="button.default">
@@ -3029,27 +3377,21 @@ document.addEventListener('click', function(e) {
     var secEl = document.getElementById('timer-seconds');
     if (!minEl || !secEl) return;
 
-    var DURATION = (7 * 60 + 21) * 1000; // 7m 21s
-    var targetTime = localStorage.getItem('lagos_scarcity_end');
-
-    if (!targetTime || isNaN(targetTime) || Date.now() > parseInt(targetTime, 10)) {
-      targetTime = Date.now() + DURATION;
-      localStorage.setItem('lagos_scarcity_end', targetTime);
-    } else {
-      targetTime = parseInt(targetTime, 10);
-    }
+    var storageKey = "oferta_timer_end";
+    var defaultDuration = 22 * 60 + 44; // sincronizado em lockstep com o primeiro cronômetro
 
     function updateTimer() {
-      var remaining = Math.max(0, targetTime - Date.now());
-      var totalSec = Math.floor(remaining / 1000);
-      var m = Math.floor(totalSec / 60);
-      var s = totalSec % 60;
+      var now = Math.floor(Date.now() / 1000);
+      var endTime = parseInt(sessionStorage.getItem(storageKey), 10);
+      if (!endTime || endTime <= now || (endTime - now) > defaultDuration) {
+        endTime = now + defaultDuration;
+        sessionStorage.setItem(storageKey, endTime.toString());
+      }
+      var rem = Math.max(0, endTime - now);
+      var m = Math.floor(rem / 60);
+      var s = rem % 60;
       minEl.textContent = String(m).padStart(2, '0');
       secEl.textContent = String(s).padStart(2, '0');
-      if (remaining <= 0) {
-        targetTime = Date.now() + DURATION;
-        localStorage.setItem('lagos_scarcity_end', targetTime);
-      }
     }
     updateTimer();
     setInterval(updateTimer, 1000);
