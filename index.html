@@ -3496,6 +3496,11 @@
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>						</span>
 										<span class="elementor-icon-list-text">As orientações não são adequadas ao que você deseja construir;</span>
 									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Ou simplesmente decidir que o material não é para você.</span>
+									</li>
 								
 						</ul>
 						</div>
@@ -4240,6 +4245,141 @@ document.addEventListener("DOMContentLoaded", function() {
       .elementor-element-6d6feb5b {
         padding-top: 28px !important;
         padding-bottom: 42px !important;
+      }
+    }
+
+    /* ========================================================================== */
+    /* POLISH: 5 PONTOS DOS ANEXOS (GARANTIA, TRAJETÓRIA, ESPAÇAMENTOS, BOTÃO)   */
+    /* ========================================================================== */
+
+    /* PONTO 1: Tirar a linha/borda embaixo do último motivo da garantia */
+    .elementor-element-4af4d716 .elementor-icon-list-item:last-child {
+      border-bottom: none !important;
+    }
+
+    /* PONTO 2: Trajetória dos passos ("Como funciona o acesso") limpa e elegante */
+    /* Remove a linha antiga que cortava o meio dos cards */
+    .elementor-element-3104f55::before,
+    .access-flow-card:before {
+      display: none !important;
+      content: none !important;
+    }
+
+    /* Conectores elegantes ENTRE os cards (sem cortar emojis nem textos) */
+    @media (min-width: 901px) {
+      .access-flow-card {
+        position: relative !important;
+      }
+      .access-flow-card:not(:last-child)::after {
+        content: '' !important;
+        position: absolute !important;
+        right: -24px !important;
+        top: 42px !important;
+        width: 24px !important;
+        height: 2px !important;
+        background: linear-gradient(90deg, #FFD700, #35A6D2) !important;
+        z-index: 10 !important;
+      }
+      .access-flow-card:not(:last-child)::before {
+        content: '▶' !important;
+        position: absolute !important;
+        right: -15px !important;
+        top: 36px !important;
+        font-size: 11px !important;
+        color: #FFD700 !important;
+        z-index: 11 !important;
+        line-height: 1 !important;
+      }
+    }
+    @media (max-width: 900px) {
+      .access-flow-card {
+        position: relative !important;
+      }
+      .access-flow-card:not(:last-child)::after {
+        content: '▼' !important;
+        position: absolute !important;
+        bottom: -15px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        font-size: 12px !important;
+        color: #FFD700 !important;
+        z-index: 10 !important;
+        line-height: 1 !important;
+      }
+    }
+
+    /* PONTO 3: Reduzir espaço entre Garantia e Perguntas Frequentes (Imagem 3) */
+    .elementor-element-4af4d716,
+    html body .elementor-element-4af4d716 {
+      padding-bottom: 18px !important;
+    }
+    .elementor-element-4af4d716 .elementor-element-4a020f7 p:last-child {
+      margin-bottom: 0 !important;
+    }
+    .elementor-element-6d6feb5b,
+    html body .elementor-element-6d6feb5b {
+      padding-top: 24px !important;
+    }
+    @media (max-width: 767px) {
+      .elementor-element-4af4d716,
+      html body .elementor-element-4af4d716 {
+        padding-bottom: 14px !important;
+      }
+      .elementor-element-6d6feb5b,
+      html body .elementor-element-6d6feb5b {
+        padding-top: 20px !important;
+      }
+    }
+
+    /* PONTO 4: Reduzir espaços entre Timer -> Depoimentos e Depoimentos -> Acesso (Imagens 4 e 5) */
+    /* Timer -> Depoimentos */
+    .scarcity-timer-section {
+      padding-top: 24px !important;
+      padding-bottom: 24px !important;
+    }
+    .elementor-element-depoimentos-container {
+      padding-top: 28px !important;
+      padding-bottom: 30px !important;
+    }
+    .elementor-element-depoimentos-container > .e-con-inner {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    /* Depoimentos -> Como funciona o acesso */
+    .elementor-element-36c2edd4 {
+      padding-top: 26px !important;
+    }
+    @media (max-width: 767px) {
+      .scarcity-timer-section {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+      }
+      .elementor-element-depoimentos-container {
+        padding-top: 22px !important;
+        padding-bottom: 24px !important;
+      }
+      .elementor-element-36c2edd4 {
+        padding-top: 22px !important;
+      }
+    }
+
+    /* PONTO 5: Botão "QUERO GARANTIR MEUS BÔNUS" mais perto dos cards e com menos espaço abaixo (Imagem 6) */
+    #bonus-cta-container {
+      margin-top: 4px !important;
+      padding: 2px 16px 6px !important;
+    }
+    .elementor-element-6f9fdc18,
+    html body .elementor-element-6f9fdc18 {
+      padding-bottom: 24px !important;
+    }
+    @media (max-width: 767px) {
+      #bonus-cta-container {
+        margin-top: 2px !important;
+        padding: 2px 14px 4px !important;
+      }
+      .elementor-element-6f9fdc18,
+      html body .elementor-element-6f9fdc18 {
+        padding-bottom: 20px !important;
       }
     }
 </style>
