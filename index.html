@@ -2292,7 +2292,7 @@
   .hero-gold,
   .elementor-element-1c699059 .elementor-heading-title .hero-gold,
   .elementor-heading-title .hero-gold {
-    color: #D5A536 !important;
+    color: #EAA816 !important;
     font-family: 'Poppins', Arial, sans-serif !important;
     font-weight: 900 !important;
     letter-spacing: inherit !important;
@@ -2867,14 +2867,29 @@
     box-shadow: 0 14px 32px rgba(0, 200, 83, 0.5) !important;
   }
 
-  /* 2. CENTRALIZAR 'VOCÊ RECEBE:' */
+  /* Remove duplicata Você economiza R$ 59,10 */
+  .elementor-element-65e98505,
+  html body .elementor-element-65e98505 {
+    display: none !important;
+  }
+
+  /* 2. DOURADO VIBRANTE E RADIANTE NA HEADLINE DO HERO */
+  .hero-gold,
+  span.hero-gold,
+  html body .hero-gold,
+  .elementor-element-1c699059 .elementor-heading-title .hero-gold {
+    color: #EAA816 !important;
+    text-shadow: 0 1px 2px rgba(234, 168, 22, 0.28) !important;
+  }
+
+  /* 3. CENTRALIZAR 'VOCÊ RECEBE:' */
   .elementor-element-6b1bad13,
   .elementor-element-6b1bad13 p,
   html body .elementor-element-6b1bad13 p {
     text-align: center !important;
   }
 
-  /* 3. HERO MOBILE LIST ALIGNMENT (ICONE NO TOPO DA LINHA 1, TEXTO ALINHADO À ESQUERDA) */
+  /* 4. HERO MOBILE LIST ALIGNMENT (ICONE NO TOPO DA LINHA 1, TEXTO ALINHADO À ESQUERDA) */
   @media (max-width: 767px) {
     .elementor-element-1585afcc,
     html body .elementor-element-1585afcc {
@@ -2917,7 +2932,7 @@
     }
   }
 
-  /* 4. ALINHAMENTO DOS 4 CARDS ("O QUE VOCÊ VAI ENCONTRAR") */
+  /* 5. ALINHAMENTO DOS 4 CARDS ("O QUE VOCÊ VAI ENCONTRAR") */
   .elementor-element-5622767f,
   .elementor-element-affbbf9,
   html body .elementor-element-5622767f,
@@ -2974,7 +2989,7 @@
     }
   }
 
-  /* 5. BIBLIOTECA: HEADLINE MAIÚSCULA + ESPAÇAMENTO ATÉ A DOBRA + REMOVE NOTCH LATERAL */
+  /* 6. BIBLIOTECA: HEADLINE MAIÚSCULA + ESPAÇAMENTO ATÉ A DOBRA + REMOVE NOTCH LATERAL */
   section.elementor-element-lagos-library,
   .elementor-element-lagos-library,
   html body .elementor-element-lagos-library {
@@ -2990,7 +3005,7 @@
     text-transform: uppercase !important;
   }
 
-  /* 6. BÔNUS COMPACTOS (SEM ESPAÇOS EM BRANCO EXCESSIVOS) */
+  /* 7. BÔNUS COMPACTOS (SEM ESPAÇOS EM BRANCO EXCESSIVOS) */
   .elementor-element-6f9fdc18,
   html body .elementor-element-6f9fdc18 {
     padding-top: 48px !important;
@@ -3095,21 +3110,31 @@
     margin-top: 4px !important;
   }
 
-  /* 7. TRANSIÇÃO PLANOS -> GARANTIA (ESPAÇO REDUZIDO EQUILIBRADO) */
+  /* 8. TRANSIÇÃO PLANOS -> GARANTIA */
   .elementor-element-5cc62ff9,
   html body .elementor-element-5cc62ff9 {
     padding-bottom: 26px !important;
   }
 
-  /* 8. TRANSIÇÃO GARANTIA -> FAQ (ESPAÇO MÍNIMO CONFORTÁVEL) */
+  /* 9. TRANSIÇÃO GARANTIA -> FAQ (ESPAÇO SUPERIOR AMPLIADO + ESPAÇO INFERIOR DA HEADLINE ENCURTADO) */
   .elementor-element-4af4d716,
   html body .elementor-element-4af4d716 {
     padding-top: 26px !important;
-    padding-bottom: 24px !important;
+    padding-bottom: 34px !important;
   }
   .elementor-element-6d6feb5b,
   html body .elementor-element-6d6feb5b {
-    padding-top: 26px !important;
+    padding-top: 34px !important;
+  }
+  /* Encurtar espaço abaixo da headline "Perguntas Frequentes" */
+  .elementor-element-472cc342,
+  .elementor-element-472cc342 .elementor-heading-title,
+  html body .elementor-element-472cc342 .elementor-heading-title {
+    margin-bottom: 12px !important;
+  }
+  .elementor-element-54030fb5,
+  html body .elementor-element-54030fb5 {
+    margin-top: 0 !important;
   }
 
   @media (max-width: 767px) {
@@ -3120,12 +3145,61 @@
     .elementor-element-4af4d716,
     html body .elementor-element-4af4d716 {
       padding-top: 22px !important;
-      padding-bottom: 20px !important;
+      padding-bottom: 28px !important;
     }
     .elementor-element-6d6feb5b,
     html body .elementor-element-6d6feb5b {
-      padding-top: 22px !important;
+      padding-top: 28px !important;
     }
+    .elementor-element-472cc342,
+    .elementor-element-472cc342 .elementor-heading-title,
+    html body .elementor-element-472cc342 .elementor-heading-title {
+      margin-bottom: 10px !important;
+    }
+  }
+
+  /* 10. BOTÕES CTA: SEM EFEITO DE PULSO (SOMENTE BRILHO RELUZENTE EM AMBOS: ACESSO E FAQ) */
+  #cta-acesso-completo,
+  #cta-faq-completo,
+  .elementor-element-49832822 .elementor-button,
+  .faq-final-cta .elementor-button,
+  html body #cta-acesso-completo,
+  html body #cta-faq-completo {
+    animation: none !important;
+    transform: none !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+  #cta-acesso-completo:hover,
+  #cta-faq-completo:hover {
+    transform: translateY(-2px) !important;
+  }
+  #cta-acesso-completo::after,
+  #cta-faq-completo::after,
+  .elementor-element-49832822 .elementor-button::after,
+  .faq-final-cta .elementor-button::after {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 45% !important;
+    height: 100% !important;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.55) 50%,
+      rgba(255, 255, 255, 0) 100%
+    ) !important;
+    transform: translateX(-150%) skewX(-20deg) !important;
+    animation: passarBrilhoSuave 2.8s ease-in-out infinite !important;
+    pointer-events: none !important;
+    z-index: 5 !important;
+  }
+  #cta-acesso-completo .elementor-button-content-wrapper,
+  #cta-faq-completo .elementor-button-content-wrapper {
+    position: relative !important;
+    z-index: 6 !important;
   }
 </style>
 
@@ -3146,7 +3220,7 @@
 				<div class="elementor-element elementor-element-16a46a24 elementor-widget elementor-widget-heading" data-id="16a46a24" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><svg class="secure-badge-icon" aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 334.8 496 128c0-19.4-11.7-36.9-29.5-44.3zM237.7 348.6l-85-85c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l51.1 51.1 127.8-127.8c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.2 6.2 6.2 16.4 0 22.6L260.3 348.6c-6.2 6.2-16.4 6.2-22.6 0z"/></svg>COMPRA 100% SEGURA E PROTEGIDA</h2>				</div>
 				<div class="elementor-element elementor-element-1c699059 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="1c699059" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
-					<h2 class="elementor-heading-title elementor-size-default"><span class="hero-gold" style="color: #D5A536 !important; font-family: 'Poppins', Arial, sans-serif !important; font-weight: 900 !important; letter-spacing: inherit !important;">+100 PROJETOS</span> DE LAGOS ORNAMENTAIS PARA TIRAR O <span class="hero-gold" style="color: #D5A536 !important; font-family: 'Poppins', Arial, sans-serif !important; font-weight: 900 !important; letter-spacing: inherit !important;">LAGO DOS SEUS SONHOS</span> DO PAPEL</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default"><span class="hero-gold" style="color: #EAA816 !important; font-family: 'Poppins', Arial, sans-serif !important; font-weight: 900 !important; letter-spacing: inherit !important;">+100 PROJETOS</span> DE LAGOS ORNAMENTAIS PARA TIRAR O <span class="hero-gold" style="color: #EAA816 !important; font-family: 'Poppins', Arial, sans-serif !important; font-weight: 900 !important; letter-spacing: inherit !important;">LAGO DOS SEUS SONHOS</span> DO PAPEL</h2>				</div>
 				<div class="elementor-element elementor-element-2373437d elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="2373437d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<img loading="eager" fetchpriority="high" decoding="async" width="1254" height="1254" src="/mockup-principal-lagos.webp" class="attachment-large size-large" alt="Projetos de Lagos Ornamentais - +100 Projetos Prontos" />															</div>
 				<div class="elementor-element elementor-element-3a23d999 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="3a23d999" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
@@ -3749,21 +3823,12 @@
 						</ul>
 						</div>
 				<div class="elementor-element elementor-element-3d6a6efb elementor-widget elementor-widget-text-editor" data-id="3d6a6efb" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
-									<p style="color: #FFFFFF !important; font-family: 'Poppins', Arial, sans-serif; font-size: 15px; font-weight: 500; margin: 0 0 4px 0;">de R$ <s style="color: #FF4D4D !important; text-decoration: line-through !important; font-weight: 800; margin: 0 3px;">97,90</s> por:</p>								</div>
+									<p style="color: #FFFFFF !important; font-family: 'Poppins', Arial, sans-serif; font-size: 15px; font-weight: 500; margin: 0 0 4px 0;">de <s style="color: #FF4D4D !important; text-decoration: line-through !important; font-weight: 800; margin: 0 3px;">R$ 97,90</s> por:</p>								</div>
 				<div class="elementor-element elementor-element-2d7edbc3 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="2d7edbc3" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">R$ 37,90</h2>				</div>
 				<div class="elementor-element elementor-element-281b3a2d elementor-widget elementor-widget-text-editor" data-id="281b3a2d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<p>ou 3x de R$ 12,63 sem juros</p>
 									<p class="plano-economia-badge" style="display: inline-block; background: rgba(39, 174, 96, 0.22); border: 1px solid #27AE60; color: #2ECC71 !important; font-family: 'Poppins', Arial, sans-serif; font-size: 12.5px; font-weight: 800; padding: 4px 12px; border-radius: 999px; margin: 6px 0 0 0; text-transform: uppercase; letter-spacing: 0.04em;">Você economiza R$ 60,00</p>								</div>
-				<div class="elementor-element elementor-element-65e98505 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="65e98505" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
-							<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<span class="elementor-icon-list-icon">
-							<svg aria-hidden="true" class="e-font-icon-svg e-fas-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Você economiza <b>R$ 59,10</b></span>
-									</li>
-						</ul>
-						</div>
 				<div class="elementor-element elementor-element-1fa06f28 elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="1fa06f28" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 										<a href="#plano-completo" id="cta-plano-completo" class="elementor-button elementor-button-link elementor-size-sm gtm-link-click">
 						<span class="elementor-button-content-wrapper">
