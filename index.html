@@ -869,7 +869,7 @@
       line-height: 1 !important;
     }
     .elementor-element-790607e2 .elementor-image-box-title {
-      font-size: 21px !important;
+      font-size: 19.5px !important;
       line-height: 1.12 !important;
       margin: 0 0 6px !important;
       color: #103B64 !important;
@@ -2468,7 +2468,7 @@
   .elementor-element-21b6d432 b {
     color: #000000 !important;
     font-family: 'Poppins', Arial, sans-serif !important;
-    font-size: 21px !important;
+    font-size: 19.5px !important;
     font-weight: 800 !important;
     line-height: 1.25 !important;
     display: block !important;
@@ -2759,20 +2759,7 @@
   /* ---------------------------------------------------- */
   /* PULSAÇÃO SUAVE E ELEGANTE NOS CTAS PRINCIPAIS        */
   /* ---------------------------------------------------- */
-  @keyframes ctaGentlePulse {
-    0% {
-      transform: scale(1);
-      box-shadow: 0 8px 24px rgba(39, 174, 96, 0.35);
-    }
-    50% {
-      transform: scale(1.035);
-      box-shadow: 0 14px 34px rgba(39, 174, 96, 0.55);
-    }
-    100% {
-      transform: scale(1);
-      box-shadow: 0 8px 24px rgba(39, 174, 96, 0.35);
-    }
-  }
+  
 
   #cta-hero-completo,
   .elementor-element-3971d552 .elementor-button,
@@ -2781,7 +2768,7 @@
   #bonus-cta-container .elementor-button,
   .elementor-element-49832822 .elementor-button,
   .faq-final-cta .elementor-button {
-    animation: ctaGentlePulse 2.8s ease-in-out infinite !important;
+    animation: none !important;
   }
 
   #cta-plano-completo,
@@ -2880,22 +2867,21 @@
     display: none !important;
   }
 
-  /* 2. DOURADO METÁLICO RADIANTE COM BRILHO NA HEADLINE DO HERO */
-    /* DOURADO RICO E ELEGANTE NA HEADLINE DO HERO (SEM BRILHO BRANCO) */
+  /* 2. DOURADO LIMPO E SÓLIDO NA HEADLINE (SEM BRILHO / SEM DROP-SHADOW) */
   .hero-gold,
   span.hero-gold,
   html body .hero-gold,
   .elementor-element-1c699059 .elementor-heading-title .hero-gold {
-    background: linear-gradient(135deg, #D97706 0%, #F59E0B 40%, #FBBF24 60%, #D97706 100%) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-    color: #F59E0B !important;
-    display: inline-block !important;
-    filter: drop-shadow(0 1px 2px rgba(180, 115, 0, 0.35)) drop-shadow(0 2px 6px rgba(245, 192, 66, 0.25)) !important;
+    color: #E5A00D !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    -webkit-text-fill-color: #E5A00D !important;
+    text-shadow: none !important;
+    filter: none !important;
+    box-shadow: none !important;
+    display: inline !important;
     animation: none !important;
-  }
-    100% { background-position: 200% 50%; }
   }
 
   /* 3. CENTRALIZAR 'VOCÊ RECEBE:' */
@@ -3317,59 +3303,190 @@
   <!-- PREFETCH & PRECONNECT CHECKOUT ZUPTOS (PERFORMANCE & TRACKING BEST PRACTICE) -->
   <link rel="dns-prefetch" href="https://app.zuptos.com.br">
   <link rel="preconnect" href="https://app.zuptos.com.br" crossorigin>
+
+
+
+
+
+
 <style id="headline-formatting-styles">
   /* ========================================================
-     FORMATAÇÃO ORGANIZADA E BALANCEADA DA HEADLINE
+     HEADLINE: MAIOR, TAMANHO 100% PADRONIZADO E SEM BRILHO
      ======================================================== */
   .elementor-element-1c699059 .elementor-heading-title {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    font-size: clamp(28px, 2.7vw, 36px) !important;
+    font-weight: 900 !important;
     line-height: 1.25 !important;
     letter-spacing: -0.02em !important;
-    margin: 0 auto !important;
-    max-width: 950px !important;
+    color: #103B64 !important;
+    text-transform: uppercase !important;
     text-align: center !important;
+    margin: 0 auto !important;
+    max-width: 1050px !important;
+    text-shadow: none !important;
+    filter: none !important;
   }
-  .hl-tier-main {
+  .hl-tier-1,
+  .hl-tier-2,
+  .hl-tier-3 {
     display: block !important;
-    font-size: clamp(23px, 4.4vw, 38px) !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+  }
+  .hero-gold,
+  span.hero-gold,
+  html body .hero-gold {
+    color: #D97706 !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    -webkit-text-fill-color: #D97706 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    font-size: inherit !important;
     font-weight: 900 !important;
-    line-height: 1.18 !important;
-    margin-bottom: 5px !important;
+    animation: none !important;
   }
-  .hl-tier-mid {
-    display: block !important;
-    font-size: clamp(19px, 3.4vw, 30px) !important;
-    font-weight: 900 !important;
-    color: #103B64 !important;
-    line-height: 1.22 !important;
-    margin-bottom: 5px !important;
-  }
-  .hl-tier-sub {
-    display: block !important;
-    font-size: clamp(16px, 2.7vw, 24px) !important;
-    font-weight: 800 !important;
-    color: #103B64 !important;
-    line-height: 1.25 !important;
-  }
-  @media (max-width: 480px) {
-    .hl-tier-main .hl-ornamentais {
+
+  @media (max-width: 767px) {
+    .elementor-element-1c699059 .elementor-heading-title {
+      font-size: clamp(16px, 4.7vw, 19.5px) !important;
+      line-height: 1.3 !important;
+      padding: 0 2px !important;
+      max-width: 100% !important;
+    }
+    .hl-mob-block {
       display: block !important;
+      white-space: nowrap !important;
     }
-    .hl-tier-main {
-      font-size: 23px !important;
-      margin-bottom: 3px !important;
-      line-height: 1.2 !important;
+  }
+
+  /* ========================================================
+     BOTÕES / CTAS: SEM PULO/SALTO E COM BRILHO RELUZENTE SWEEP
+     (EXCETO O PLANO BÁSICO)
+     ======================================================== */
+  @keyframes passarBrilhoReluzente {
+    0% {
+      transform: translateX(-160%) skewX(-20deg);
     }
-    .hl-tier-mid {
-      font-size: 19px !important;
-      margin-bottom: 3px !important;
-      line-height: 1.22 !important;
+    28% {
+      transform: translateX(250%) skewX(-20deg);
     }
-    .hl-tier-sub {
-      font-size: 15.5px !important;
-      line-height: 1.25 !important;
+    100% {
+      transform: translateX(250%) skewX(-20deg);
     }
+  }
+
+  /* Zero pulo / salto / pulse / bounce em TODOS os botões e wrappers da página */
+  .elementor-button,
+  a.elementor-button,
+  .elementor-widget-button,
+  .elementor-widget-button .elementor-widget-container,
+  .elementor-element-71c9d412,
+  .elementor-element-1fa06f28,
+  .elementor-element-49832822,
+  .elementor-element-2246f33f,
+  .elementor-element-23a0ad0e,
+  .elementor-element-3971d552,
+  .elementor-element-51d038c7,
+  .elementor-element-4f11ad6b,
+  #cta-hero-completo,
+  #cta-conteudo-completo,
+  #cta-bonus-completo,
+  #cta-acesso-completo,
+  #cta-plano-completo,
+  #cta-faq-completo,
+  #cta-plano-basico,
+  #cta-popup-oferta-especial {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .elementor-button:hover,
+  .elementor-element-71c9d412:hover,
+  .elementor-element-1fa06f28:hover,
+  .elementor-element-49832822:hover,
+  #cta-plano-basico:hover {
+    transform: none !important;
+    --e-transform-scale: 1 !important;
+  }
+
+  /* CTAs COM BRILHO RELUZENTE QUE FICA PASSANDO */
+  #cta-hero-completo,
+  #cta-conteudo-completo,
+  #cta-bonus-completo,
+  #cta-acesso-completo,
+  #cta-plano-completo,
+  #cta-faq-completo,
+  #cta-popup-oferta-especial {
+    position: relative !important;
+    overflow: hidden !important;
+    isolation: isolate !important;
+  }
+
+  #cta-hero-completo::after,
+  #cta-conteudo-completo::after,
+  #cta-bonus-completo::after,
+  #cta-acesso-completo::after,
+  #cta-plano-completo::after,
+  #cta-faq-completo::after,
+  #cta-popup-oferta-especial::after {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 50% !important;
+    height: 100% !important;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.65) 50%,
+      rgba(255, 255, 255, 0) 100%
+    ) !important;
+    transform: translateX(-160%) skewX(-20deg) !important;
+    animation: passarBrilhoReluzente 2.6s ease-in-out infinite !important;
+    pointer-events: none !important;
+    z-index: 5 !important;
+  }
+
+  /* PLANO BÁSICO: TOTALMENTE ESTÁTICO (ZERO PULO, ZERO SALTO, ZERO PULSE, ZERO BRILHO) */
+  #cta-plano-basico,
+  #cta-plano-basico *,
+  .elementor-element-71c9d412,
+  .elementor-element-71c9d412 *,
+  .elementor-element-71c9d412 .elementor-button,
+  .elementor-element-71c9d412 .elementor-widget-container {
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  #cta-plano-basico:hover,
+  .elementor-element-71c9d412:hover,
+  .elementor-element-71c9d412 .elementor-button:hover {
+    transform: none !important;
+    --e-transform-scale: 1 !important;
+  }
+  #cta-plano-basico::after,
+  #cta-plano-basico::before,
+  .elementor-element-71c9d412::after,
+  .elementor-element-71c9d412::before,
+  .elementor-element-71c9d412 .elementor-button::after,
+  .elementor-element-71c9d412 .elementor-button::before {
+    display: none !important;
+    content: none !important;
+    animation: none !important;
   }
 </style>
+
+
+
+
+
+
 </head>
 <body class="wp-singular page-template page-template-elementor_canvas page page-id-4874 wp-embed-responsive wp-theme-astra ast-desktop ast-page-builder-template ast-no-sidebar astra-4.13.0 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-4874">
 
@@ -3388,9 +3505,9 @@
 					<h2 class="elementor-heading-title elementor-size-default"><svg class="secure-badge-icon" aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 334.8 496 128c0-19.4-11.7-36.9-29.5-44.3zM237.7 348.6l-85-85c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l51.1 51.1 127.8-127.8c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.2 6.2 6.2 16.4 0 22.6L260.3 348.6c-6.2 6.2-16.4 6.2-22.6 0z"/></svg>COMPRA 100% SEGURA E PROTEGIDA</h2>				</div>
 				<div class="elementor-element elementor-element-1c699059 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="1c699059" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">
-  <span class="hl-tier-main"><span class="hero-gold">+100 PROJETOS</span> <span class="hero-gold hl-ornamentais">DE LAGOS ORNAMENTAIS</span></span>
-  <span class="hl-tier-mid">COM <span class="hero-gold">VIDEOAULAS PRÁTICAS</span></span>
-  <span class="hl-tier-sub">PARA CONSTRUIR O LAGO DOS SEUS SONHOS</span>
+  <span class="hl-tier-1"><span class="hero-gold hl-mob-block">+100 PROJETOS DE</span> <span class="hero-gold hl-mob-block">LAGOS ORNAMENTAIS</span></span>
+  <span class="hl-tier-2"><span class="hl-mob-block">COM <span class="hero-gold">VIDEOAULAS PRÁTICAS</span></span></span>
+  <span class="hl-tier-3"><span class="hl-mob-block">PARA CONSTRUIR O</span> <span class="hl-mob-block">LAGO DOS SEUS SONHOS</span></span>
 </h2>				</div>
 				<div class="elementor-element elementor-element-2373437d elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="2373437d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
 															<picture>
@@ -5053,7 +5170,7 @@ document.addEventListener("DOMContentLoaded", function() {
       /* Headline Principal Hero: 28-32px */
       .elementor-element-1c699059 .elementor-heading-title,
       .elementor-element-4c6be628 h2.elementor-heading-title {
-        font-size: 29px !important;
+        font-size: clamp(16.5px, 4.8vw, 20.5px) !important;
         line-height: 1.2 !important;
         letter-spacing: -0.4px !important;
       }
