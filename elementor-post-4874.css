@@ -353,13 +353,13 @@ html body{
 	font-style: normal;
 	font-weight: normal;
 	font-display: swap;
-	src: url('./Inter_24pt-Regular.woff') format('woff');
+	src: url('/poppins-400.woff2') format('woff2') format('woff');
 }
 @font-face {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: bold;
 	font-display: swap;
-	src: url('./Inter_24pt-Bold.woff') format('woff');
+	src: url('/poppins-700.woff2') format('woff2') format('woff');
 }
 /* End Custom Fonts CSS */
