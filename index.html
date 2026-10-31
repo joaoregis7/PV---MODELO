@@ -3384,9 +3384,9 @@
      ======================================================== */
   .elementor-element-1c699059 .elementor-heading-title {
     font-family: 'Poppins', Arial, sans-serif !important;
-    font-size: clamp(38px, 3.8vw, 48px) !important;
+    font-size: clamp(44px, 4.4vw, 56px) !important;
     font-weight: 900 !important;
-    line-height: 1.18 !important;
+    line-height: 1.15 !important;
     letter-spacing: -0.02em !important;
     color: #103B64 !important;
     text-transform: uppercase !important;
@@ -3424,8 +3424,8 @@
     .elementor-element-1c699059 .elementor-heading-title,
     .elementor-element-4c6be628 h2.elementor-heading-title,
     html body .elementor-element-1c699059 .elementor-heading-title {
-      font-size: clamp(21.5px, 6.2vw, 26px) !important;
-      line-height: 1.2 !important;
+      font-size: clamp(24px, 6.4vw, 29px) !important;
+      line-height: 1.18 !important;
       letter-spacing: -0.035em !important;
       padding: 0 4px !important;
       max-width: 100% !important;
@@ -3455,15 +3455,15 @@
   @keyframes pulsePlanoCompleto {
     0% {
       transform: scale(1);
-      box-shadow: 0 10px 25px rgba(0, 230, 118, 0.4);
+      box-shadow: 0 10px 24px rgba(49, 178, 110, 0.35);
     }
     50% {
       transform: scale(1.035);
-      box-shadow: 0 16px 36px rgba(0, 230, 118, 0.65);
+      box-shadow: 0 16px 32px rgba(49, 178, 110, 0.6);
     }
     100% {
       transform: scale(1);
-      box-shadow: 0 10px 25px rgba(0, 230, 118, 0.4);
+      box-shadow: 0 10px 24px rgba(49, 178, 110, 0.35);
     }
   }
 
@@ -3490,24 +3490,26 @@
     transform: none !important;
   }
 
-  /* Verde padronizado #00E676 para TODOS os CTAs da página */
+  /* Verde anterior padronizado (#31B26E) para TODOS os CTAs da página */
   #cta-hero-completo,
   #cta-conteudo-completo,
   #cta-bonus-completo,
   #cta-acesso-completo,
   #cta-plano-completo,
   #cta-faq-completo,
+  #cta-popup-oferta-especial,
   html body #cta-hero-completo,
   html body #cta-conteudo-completo,
   html body #cta-bonus-completo,
   html body #cta-acesso-completo,
   html body #cta-plano-completo,
-  html body #cta-faq-completo {
-    background: #00E676 !important;
-    background-color: #00E676 !important;
+  html body #cta-faq-completo,
+  html body #cta-popup-oferta-especial {
+    background: linear-gradient(135deg, #3cc178 0%, #31b26e 100%) !important;
+    background-color: #31b26e !important;
     color: #FFFFFF !important;
-    border: 2px solid #00E676 !important;
-    box-shadow: 0 12px 28px rgba(0, 230, 118, 0.45) !important;
+    border: none !important;
+    box-shadow: 0 10px 24px rgba(49, 178, 110, 0.35) !important;
     position: relative !important;
     overflow: hidden !important;
     isolation: isolate !important;
@@ -3518,7 +3520,8 @@
   #cta-bonus-completo *,
   #cta-acesso-completo *,
   #cta-plano-completo *,
-  #cta-faq-completo * {
+  #cta-faq-completo *,
+  #cta-popup-oferta-especial * {
     color: #FFFFFF !important;
     font-weight: 900 !important;
   }
@@ -3528,10 +3531,12 @@
   #cta-bonus-completo:hover,
   #cta-acesso-completo:hover,
   #cta-plano-completo:hover,
-  #cta-faq-completo:hover {
-    background: #00C853 !important;
-    background-color: #00C853 !important;
-    border-color: #00C853 !important;
+  #cta-faq-completo:hover,
+  #cta-popup-oferta-especial:hover {
+    background: linear-gradient(135deg, #44d485 0%, #35c077 100%) !important;
+    background-color: #35c077 !important;
+    box-shadow: 0 14px 28px rgba(49, 178, 110, 0.45) !important;
+    border: none !important;
   }
 
   /* Brilho reluzente sweep passando em TODOS os CTAs */
@@ -3620,7 +3625,7 @@
 				<div class="elementor-element elementor-element-1c699059 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="1c699059" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">
   <span class="hl-tier-1"><span class="hero-gold hl-mob-block">+100 PROJETOS DE</span> <span class="hero-gold hl-mob-block">LAGOS ORNAMENTAIS</span></span>
-  <span class="hl-tier-2"><span class="hl-mob-block">COM VIDEOAULAS PRÁTICAS</span></span>
+  <span class="hl-tier-2"><span class="hl-mob-block">COM VIDEOAULAS</span> <span class="hl-mob-block">PRÁTICAS</span></span>
   <span class="hl-tier-3"><span class="hl-mob-block">PARA CONSTRUIR O</span> <span class="hl-mob-block">LAGO DOS SEUS SONHOS</span></span>
 </h2>				</div>
 				<div class="elementor-element elementor-element-2373437d elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="2373437d" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
@@ -5284,8 +5289,8 @@ document.addEventListener("DOMContentLoaded", function() {
       /* Headline Principal Hero: Maior e Responsiva */
       .elementor-element-1c699059 .elementor-heading-title,
       .elementor-element-4c6be628 h2.elementor-heading-title {
-        font-size: clamp(21.5px, 6.2vw, 26px) !important;
-        line-height: 1.2 !important;
+        font-size: clamp(24px, 6.4vw, 29px) !important;
+        line-height: 1.18 !important;
         letter-spacing: -0.035em !important;
       }
 
@@ -5374,8 +5379,26 @@ document.addEventListener("DOMContentLoaded", function() {
     /* 5. BONUS CARDS: COMPACTO, ENXUTO E RESPONSIVO                              */
     /* -------------------------------------------------------------------------- */
     .elementor-element-30ffb0da {
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      align-items: stretch !important;
       gap: 16px !important;
+      margin-bottom: 24px !important;
     }
+    @media (max-width: 1024px) {
+      .elementor-element-30ffb0da {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px !important;
+      }
+    }
+    @media (max-width: 767px) {
+      .elementor-element-30ffb0da {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+      }
+    }
+
+    /* Cards de Bônus: 100% iguais e padronizados */
     .elementor-element-6de59a84,
     .elementor-element-12d1fcfc,
     .elementor-element-5348b210,
@@ -5388,50 +5411,55 @@ document.addEventListener("DOMContentLoaded", function() {
       border: 1px solid #D9E8F0 !important;
       border-radius: 16px !important;
       box-shadow: 0 4px 16px rgba(16, 59, 100, 0.05) !important;
-      padding: 10px 12px 14px 12px !important;
+      padding: 12px 10px 14px 10px !important;
       display: flex !important;
       flex-direction: column !important;
       justify-content: flex-start !important;
       box-sizing: border-box !important;
-      height: auto !important;
+      height: 100% !important;
       min-height: auto !important;
     }
+
     @media (min-width: 768px) {
       .elementor-element-6de59a84,
       .elementor-element-12d1fcfc,
       .elementor-element-5348b210,
-      .elementor-element-19bb3daf {
-        min-height: 440px !important;
-        justify-content: space-between !important;
-        padding: 14px 14px 16px 14px !important;
+      .elementor-element-19bb3daf,
+      html body .elementor-element-6de59a84,
+      html body .elementor-element-12d1fcfc,
+      html body .elementor-element-5348b210,
+      html body .elementor-element-19bb3daf {
+        min-height: 530px !important;
+        padding: 14px 12px 16px 12px !important;
       }
     }
 
     /* Tag BÔNUS #X */
-    .elementor-element-406b2518,
+    .elementor-element-78083748,
     .elementor-element-559dc179,
     .elementor-element-6888b1de,
     .elementor-element-5a9d2199 {
       margin: 0 auto 2px auto !important;
       padding: 0 !important;
     }
-    .elementor-element-406b2518 h2.elementor-heading-title,
+    .elementor-element-78083748 h2.elementor-heading-title,
     .elementor-element-559dc179 h2.elementor-heading-title,
     .elementor-element-6888b1de h2.elementor-heading-title,
     .elementor-element-5a9d2199 h2.elementor-heading-title {
       margin: 0 auto !important;
-      padding: 2px 10px !important;
+      padding: 3px 12px !important;
       font-size: 11px !important;
+      border-radius: 8px !important;
     }
 
-    /* Imagem de cada bônus: MAIOR */
+    /* Imagem de cada bônus */
     .elementor-element-45e73b68,
     .elementor-element-7bf4d1e6,
     .elementor-element-2a41bcd2,
     .elementor-element-6609a07d {
       height: auto !important;
       min-height: auto !important;
-      margin: 0 auto 2px auto !important;
+      margin: 0 auto 4px auto !important;
       padding: 0 !important;
       display: flex !important;
       justify-content: center !important;
@@ -5445,50 +5473,80 @@ document.addEventListener("DOMContentLoaded", function() {
     html body .elementor-element-2a41bcd2 img,
     html body .elementor-element-6609a07d img {
       width: 100% !important;
-      max-width: 175px !important;
-      max-height: 175px !important;
+      max-width: 170px !important;
+      max-height: 170px !important;
       height: auto !important;
       object-fit: contain !important;
       margin: 0 auto !important;
       display: block !important;
     }
-
-    /* Container de texto interno do bônus */
-    .elementor-element-30064f2a,
-    .elementor-element-30fb1654,
-    .elementor-element-48e2281,
-    .elementor-element-7eec4caf {
-      padding: 0 !important;
-      margin: 0 !important;
+    @media (min-width: 768px) and (max-width: 1200px) {
+      .elementor-element-45e73b68 img,
+      .elementor-element-7bf4d1e6 img,
+      .elementor-element-2a41bcd2 img,
+      .elementor-element-6609a07d img {
+        max-width: 135px !important;
+        max-height: 135px !important;
+      }
     }
 
-    /* Título do bônus */
-    .elementor-element-2c262ba9,
+    /* Container de texto interno do bônus: PADRONIZADO EM TODOS OS 4 BÔNUS COM O MESMO INSET */
+    .elementor-element-57f78ef3,
+    .elementor-element-30fb1654,
+    .elementor-element-48e2281,
+    .elementor-element-7eec4caf,
+    html body .elementor-element-57f78ef3,
+    html body .elementor-element-30fb1654,
+    html body .elementor-element-48e2281,
+    html body .elementor-element-7eec4caf {
+      padding: 0 16px !important;
+      margin: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      flex-grow: 1 !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    @media (min-width: 768px) and (max-width: 1100px) {
+      .elementor-element-57f78ef3,
+      .elementor-element-30fb1654,
+      .elementor-element-48e2281,
+      .elementor-element-7eec4caf {
+        padding: 0 10px !important;
+      }
+    }
+
+    /* Títulos dos bônus */
+    .elementor-element-19b7410c,
     .elementor-element-65bf8782,
     .elementor-element-13b62e04,
     .elementor-element-21b6d432 {
       margin: 2px 0 2px 0 !important;
       padding: 0 !important;
+      text-align: center !important;
     }
-    .elementor-element-2c262ba9 p,
+    .elementor-element-19b7410c p,
     .elementor-element-65bf8782 p,
     .elementor-element-13b62e04 p,
     .elementor-element-21b6d432 p {
       margin: 0 !important;
-      font-size: 17px !important;
+      font-size: 16.5px !important;
       line-height: 1.25 !important;
       font-weight: 800 !important;
+      color: #103B64 !important;
+      text-align: center !important;
     }
 
-    /* Descrição do bônus */
-    .elementor-element-1c944ebc,
+    /* Descrições dos bônus */
+    .elementor-element-baf9138,
     .elementor-element-211ec2c4,
     .elementor-element-409c9bdd,
     .elementor-element-46c35dbc {
-      margin: 0 0 6px 0 !important;
+      margin: 0 0 8px 0 !important;
       padding: 0 !important;
+      text-align: center !important;
     }
-    .elementor-element-1c944ebc p,
+    .elementor-element-baf9138 p,
     .elementor-element-211ec2c4 p,
     .elementor-element-409c9bdd p,
     .elementor-element-46c35dbc p {
@@ -5496,31 +5554,72 @@ document.addEventListener("DOMContentLoaded", function() {
       font-size: 12.5px !important;
       line-height: 1.35 !important;
       color: #334155 !important;
+      text-align: center !important;
     }
 
-    /* Checklist de itens */
+    /* Checklist de itens: EXATAMENTE NO MESMO LUGAR EM TODOS OS 4 BÔNUS */
     .elementor-element-52d4a64d,
     .elementor-element-120c71b6,
     .elementor-element-3c8c035e,
     .elementor-element-19f1fb95 {
-      margin: 0 0 6px 0 !important;
+      margin: 0 0 10px 0 !important;
       padding: 0 !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
     }
-    .elementor-icon-list-items {
+    .elementor-element-52d4a64d .elementor-icon-list-items,
+    .elementor-element-120c71b6 .elementor-icon-list-items,
+    .elementor-element-3c8c035e .elementor-icon-list-items,
+    .elementor-element-19f1fb95 .elementor-icon-list-items {
       margin: 0 !important;
       padding: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      width: 100% !important;
+      gap: 0 !important;
     }
+    .elementor-element-52d4a64d .elementor-icon-list-item,
+    .elementor-element-120c71b6 .elementor-icon-list-item,
+    .elementor-element-3c8c035e .elementor-icon-list-item,
+    .elementor-element-19f1fb95 .elementor-icon-list-item,
     .elementor-element-6de59a84 .elementor-icon-list-item,
     .elementor-element-12d1fcfc .elementor-icon-list-item,
     .elementor-element-5348b210 .elementor-icon-list-item,
     .elementor-element-19bb3daf .elementor-icon-list-item {
-      margin-bottom: 3.5px !important;
+      margin-bottom: 4px !important;
       gap: 7px !important;
       line-height: 1.28 !important;
       display: flex !important;
       align-items: flex-start !important;
+      justify-content: flex-start !important;
       text-align: left !important;
+      width: 100% !important;
     }
+    .elementor-element-52d4a64d .elementor-icon-list-icon,
+    .elementor-element-120c71b6 .elementor-icon-list-icon,
+    .elementor-element-3c8c035e .elementor-icon-list-icon,
+    .elementor-element-19f1fb95 .elementor-icon-list-icon {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 15px !important;
+      min-width: 15px !important;
+      margin-top: 2px !important;
+      flex-shrink: 0 !important;
+    }
+    .elementor-element-52d4a64d .elementor-icon-list-icon svg,
+    .elementor-element-120c71b6 .elementor-icon-list-icon svg,
+    .elementor-element-3c8c035e .elementor-icon-list-icon svg,
+    .elementor-element-19f1fb95 .elementor-icon-list-icon svg {
+      width: 13px !important;
+      height: 13px !important;
+      fill: #145DA0 !important;
+    }
+    .elementor-element-52d4a64d .elementor-icon-list-text,
+    .elementor-element-120c71b6 .elementor-icon-list-text,
+    .elementor-element-3c8c035e .elementor-icon-list-text,
+    .elementor-element-19f1fb95 .elementor-icon-list-text,
     .elementor-element-6de59a84 .elementor-icon-list-text,
     .elementor-element-12d1fcfc .elementor-icon-list-text,
     .elementor-element-5348b210 .elementor-icon-list-text,
@@ -5531,7 +5630,7 @@ document.addEventListener("DOMContentLoaded", function() {
       text-align: left !important;
     }
 
-    /* Botão de Ancoragem de Valor: BEM MAIOR NO CELULAR */
+    /* Botão de Ancoragem de Valor: Perfeitamente alinhado na base do card */
     .elementor-element-40b03d4a,
     .elementor-element-394fa0c4,
     .elementor-element-1459bc2d,
@@ -5540,7 +5639,10 @@ document.addEventListener("DOMContentLoaded", function() {
     html body .elementor-element-394fa0c4,
     html body .elementor-element-1459bc2d,
     html body .elementor-element-5661fd48 {
-      margin: 6px auto 0 auto !important;
+      margin-top: auto !important;
+      margin-bottom: 0 !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
       width: 100% !important;
       display: flex !important;
       justify-content: center !important;
@@ -5554,11 +5656,10 @@ document.addEventListener("DOMContentLoaded", function() {
     html body .elementor-element-394fa0c4 .elementor-heading-title,
     html body .elementor-element-1459bc2d .elementor-heading-title,
     html body .elementor-element-5661fd48 .elementor-heading-title {
-      font-size: 18px !important;
-      padding: 13px 18px !important;
+      font-size: 17.5px !important;
+      padding: 12px 16px !important;
       width: 94% !important;
       max-width: 295px !important;
-      min-width: 260px !important;
       border-radius: 14px !important;
       box-shadow: 0 6px 20px rgba(16, 59, 100, 0.35) !important;
       margin: 0 auto !important;
@@ -5577,7 +5678,7 @@ document.addEventListener("DOMContentLoaded", function() {
     html body .elementor-element-394fa0c4 s,
     html body .elementor-element-1459bc2d s,
     html body .elementor-element-5661fd48 s {
-      font-size: 17.5px !important;
+      font-size: 17px !important;
       margin: 0 5px !important;
     }
     .elementor-element-40b03d4a b,
@@ -5588,8 +5689,39 @@ document.addEventListener("DOMContentLoaded", function() {
     html body .elementor-element-394fa0c4 b,
     html body .elementor-element-1459bc2d b,
     html body .elementor-element-5661fd48 b {
-      font-size: 18.5px !important;
+      font-size: 18px !important;
       letter-spacing: 0.5px !important;
+    }
+
+    /* No desktop/computador: dimensões proporcionais às 4 colunas sem estourar */
+    @media (min-width: 768px) {
+      .elementor-element-40b03d4a .elementor-heading-title,
+      .elementor-element-394fa0c4 .elementor-heading-title,
+      .elementor-element-1459bc2d .elementor-heading-title,
+      .elementor-element-5661fd48 .elementor-heading-title,
+      html body .elementor-element-40b03d4a .elementor-heading-title,
+      html body .elementor-element-394fa0c4 .elementor-heading-title,
+      html body .elementor-element-1459bc2d .elementor-heading-title,
+      html body .elementor-element-5661fd48 .elementor-heading-title {
+        font-size: 15px !important;
+        padding: 10px 10px !important;
+        width: 100% !important;
+        max-width: 245px !important;
+        min-width: auto !important;
+      }
+      .elementor-element-40b03d4a s,
+      .elementor-element-394fa0c4 s,
+      .elementor-element-1459bc2d s,
+      .elementor-element-5661fd48 s {
+        font-size: 14px !important;
+        margin: 0 3px !important;
+      }
+      .elementor-element-40b03d4a b,
+      .elementor-element-394fa0c4 b,
+      .elementor-element-1459bc2d b,
+      .elementor-element-5661fd48 b {
+        font-size: 15.5px !important;
+      }
     }
 
     /* 6. REPOSITION BONUS CTA BUTTON: RIGHT BELOW BONUS CARDS */
