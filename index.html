@@ -4,23 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>+100 Projetos de Lagos Ornamentais com Videoaulas Práticas para Construir o Lago dos Seus Sonhos</title>
-    <!-- TRACKING & UTM CAPTURE ENGINE (CAPTURA IMEDIATA NO HEAD ANTES DE QUALQUER SCRIPT) -->
+    <!-- LowTrack Pixel Tracking -->
   <script>
-  (function() {
-    try {
-      var currentSearch = window.location.search || '';
-      var STORAGE_KEY = '_zuptos_tracking_params';
-      var stored = '';
-      try { stored = sessionStorage.getItem(STORAGE_KEY) || ''; } catch(e) {}
-      var merged = new URLSearchParams(stored);
-      if (currentSearch && currentSearch.length > 1) {
-        var current = new URLSearchParams(currentSearch);
-        current.forEach(function(val, key) { merged.set(key, val); });
-        try { sessionStorage.setItem(STORAGE_KEY, merged.toString()); } catch(e) {}
-      }
-      window._capturedTrackingQuery = merged.toString();
-    } catch(err) {}
-  })();
+    window.pixelId = "lt_px_4f7eaf501d6e";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://lowtrack.com.br/pixel.js");
+    document.head.appendChild(a);
   </script>
   <meta name="description" content="Aprenda o passo a passo para planejar, escavar, impermeabilizar e montar seu lago ornamental com mais de 100 projetos detalhados e videoaulas práticas.">
   <meta name="robots" content="max-image-preview:large">
@@ -38,10 +29,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="shortcut icon" href="/favicon.ico">
 
-  <!-- Preconnect para Analytics / Rastreamento & Google Fonts -->
-  
-  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
-  <link rel="dns-prefetch" href="https://connect.facebook.net">
+  <!-- Preconnect para LowTrack & Recursos Críticos -->
+  <link rel="preconnect" href="https://lowtrack.com.br" crossorigin>
+  <link rel="dns-prefetch" href="https://lowtrack.com.br">
 
   <!-- ======================================================== -->
   <!-- PRELOADS CRÍTICOS: LCP & FONTES                          -->
@@ -3607,8 +3597,6 @@
 			<div data-rocket-location-hash="4e228f6ba65050c8cdf248367637c1b6" data-elementor-type="wp-page" data-elementor-id="4874" class="elementor elementor-4874" data-elementor-post-type="page">
 				<div class="elementor-element elementor-element-4973aa88 e-flex e-con-boxed e-con e-parent" data-id="4973aa88" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div data-rocket-location-hash="da3b654b339ed49f0234db69a353a170" class="e-con-inner">
-				<div class="elementor-element elementor-element-c9a276a elementor-widget elementor-widget-html" data-id="c9a276a" data-element_type="widget" data-e-type="widget" data-widget_type="html.default">
-					<!-- Meta Pixel Code (Removed) -->				</div>
 				<div class="elementor-element elementor-element-303e9b82 elementor-widget elementor-widget-heading" data-id="303e9b82" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default"><span style="color:#FFB703;margin-right:6px;font-size:1.15em;">⚡</span>OFERTA RELÂMPAGO — EXPIRA EM <span id="topbar-countdown" class="topbar-countdown">22:44</span></h2>				</div>
 					</div>
@@ -4238,21 +4226,6 @@
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
                 </svg></span>	<span class="screen-reader-text">Rolar para cima</span>
 </div>
-			
-
-
-
-
-
-
-
-
-
-
-
-			<script type="rocketlazyloadscript">
-			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
-			</script>
 			
 
 	
@@ -6259,32 +6232,9 @@ document.addEventListener('click', function(e) {
     }
   }
 
-  // Hook nativo para disparar evento de checkout no Pixel (Meta / Google / TikTok)
+  // Hook nativo para disparar evento de checkout
   function triggerPixelInitiateCheckout(planName, planValue) {
-    var val = parseFloat(planValue) || 0;
-    // 1. Meta Pixel (fbq)
-    if (typeof window.fbq === 'function') {
-      try {
-        window.fbq('track', 'InitiateCheckout', {
-          content_name: planName,
-          value: val,
-          currency: 'BRL'
-        });
-      } catch(e) {}
-    }
-    // 2. Google Tag Manager / Analytics (dataLayer)
-    if (window.dataLayer && Array.isArray(window.dataLayer)) {
-      try {
-        window.dataLayer.push({
-          event: 'initiate_checkout',
-          ecommerce: {
-            currency: 'BRL',
-            value: val,
-            items: [{ item_name: planName, price: val, quantity: 1 }]
-          }
-        });
-      } catch(e) {}
-    }
+    // LowTrack monitora automaticamente cliques nos botões de checkout
   }
 
   // Atualiza dinamicamente todos os links de checkout na página
