@@ -156,14 +156,14 @@
     .elementor-element-3971d552,
     .elementor-element-3971d552 .elementor-button,
     #cta-hero-completo,
-    .elementor-button {
+    .elementor-button:not(#cta-plano-completo) {
       animation: none !important;
       transform: none !important;
     }
 
     .elementor-element-3971d552 .elementor-button,
     #cta-hero-completo,
-    .elementor-button {
+    .elementor-button:not(#cta-plano-completo) {
       position: relative !important;
       overflow: hidden !important;
       isolation: isolate !important;
@@ -2063,7 +2063,7 @@
         rgba(255, 255, 255, 0) 100%
       ) !important;
       transform: translateX(-150%) skewX(-20deg);
-      animation: passarBrilhoSuave 3s ease-in-out infinite !important;
+      animation: passarBrilhoReluzenteContinuo 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
       pointer-events: none !important;
       z-index: 5 !important;
     }
@@ -2867,7 +2867,7 @@
       rgba(255, 255, 255, 0) 100%
     ) !important;
     transform: translateX(-150%) skewX(-20deg);
-    animation: passarBrilhoSuave 3s ease-in-out infinite !important;
+    animation: passarBrilhoReluzenteContinuo 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
     pointer-events: none !important;
     z-index: 5 !important;
   }
@@ -3278,8 +3278,6 @@
       rgba(255, 255, 255, 0.55) 50%,
       rgba(255, 255, 255, 0) 100%
     ) !important;
-    transform: translateX(-150%) skewX(-20deg) !important;
-    animation: passarBrilhoSuave 2.8s ease-in-out infinite !important;
     pointer-events: none !important;
     z-index: 5 !important;
   }
@@ -3294,12 +3292,6 @@
   /* ========================================================== */
   /* BRILHO RELUZENTE EM TODOS OS BOTÕES CTA (INCLUINDO FAQ)   */
   /* ========================================================== */
-  @keyframes passarBrilhoSuave {
-    0% { transform: translateX(-160%) skewX(-20deg); }
-    45% { transform: translateX(280%) skewX(-20deg); }
-    100% { transform: translateX(280%) skewX(-20deg); }
-  }
-
   #cta-hero-completo,
   #cta-conteudo-completo,
   #cta-bonus-completo,
@@ -3329,14 +3321,6 @@
     left: 0 !important;
     width: 50% !important;
     height: 100% !important;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.7) 50%,
-      rgba(255, 255, 255, 0) 100%
-    ) !important;
-    transform: translateX(-160%) skewX(-20deg) !important;
-    animation: passarBrilhoSuave 2.5s ease-in-out infinite !important;
     pointer-events: none !important;
     z-index: 5 !important;
   }
@@ -3454,18 +3438,18 @@
   /* Brilho reluzente reluzindo e passando com pausa rítmica */
   @keyframes passarBrilhoReluzenteContinuo {
     0% {
-      left: -130%;
+      transform: translateX(-120px) skewX(-25deg);
       opacity: 0;
     }
-    8% {
-      opacity: 0.95;
+    6% {
+      opacity: 1;
     }
-    48% {
-      left: 140%;
-      opacity: 0.95;
+    65% {
+      transform: translateX(540px) skewX(-25deg);
+      opacity: 1;
     }
-    49%, 100% {
-      left: 140%;
+    66%, 100% {
+      transform: translateX(540px) skewX(-25deg);
       opacity: 0;
     }
   }
@@ -3563,26 +3547,29 @@
   #cta-popup-oferta-especial::after,
   .elementor-element-3971d552 .elementor-button::after,
   .elementor-element-51d038c7 .elementor-button::after,
-  .elementor-element-49832822 .elementor-button::after {
+  .elementor-element-49832822 .elementor-button::after,
+  .faq-final-cta .elementor-button::after {
     content: '' !important;
     display: block !important;
     position: absolute !important;
-    top: -50% !important;
-    left: -130% !important;
-    width: 80px !important;
-    height: 200% !important;
+    top: -20% !important;
+    left: 0 !important;
+    width: 65px !important;
+    height: 140% !important;
     background: linear-gradient(
-      105deg,
-      rgba(255, 255, 255, 0) 15%,
-      rgba(255, 255, 255, 0.25) 30%,
-      rgba(255, 255, 255, 0.95) 50%,
-      rgba(255, 255, 255, 0.25) 70%,
-      rgba(255, 255, 255, 0) 85%
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.25) 20%,
+      rgba(255, 255, 255, 0.85) 45%,
+      #ffffff 50%,
+      rgba(255, 255, 255, 0.85) 55%,
+      rgba(255, 255, 255, 0.25) 80%,
+      rgba(255, 255, 255, 0) 100%
     ) !important;
-    transform: rotate(25deg) !important;
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.9) !important;
     animation: passarBrilhoReluzenteContinuo 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
     pointer-events: none !important;
-    z-index: 5 !important;
+    z-index: 4 !important;
   }
 
   /* PULSAÇÃO LENTA EXCLUSIVA NO BOTÃO DO PLANO COMPLETO */
@@ -4840,7 +4827,7 @@ document.addEventListener("DOMContentLoaded", function() {
         rgba(255, 255, 255, 0) 100%
       ) !important;
       transform: translateX(-150%) skewX(-20deg);
-      animation: passarBrilhoSuave 2.8s ease-in-out infinite !important;
+      animation: passarBrilhoReluzenteContinuo 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
       pointer-events: none !important;
       z-index: 5 !important;
     }
@@ -4935,7 +4922,7 @@ document.addEventListener("DOMContentLoaded", function() {
         rgba(255, 255, 255, 0) 100%
       ) !important;
       transform: translateX(-150%) skewX(-20deg);
-      animation: passarBrilhoSuave 2.8s ease-in-out infinite !important;
+      animation: passarBrilhoReluzenteContinuo 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
       pointer-events: none !important;
       z-index: 5 !important;
     }
