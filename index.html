@@ -448,7 +448,10 @@
       background: #52677B !important;
       background-color: #52677B !important;
       color: #FFFFFF !important;
-      border: 1px solid #52677B !important;
+      border: none !important;
+      border-radius: 999px !important;
+      padding: 17px 34px !important;
+      min-height: 60px !important;
       box-shadow: 0 8px 20px rgba(82, 103, 123, 0.35) !important;
       transform: none !important;
     }
@@ -460,6 +463,8 @@
     }
     .elementor-element-71c9d412 .elementor-button .elementor-button-text {
       color: #FFFFFF !important;
+      font-size: 16px !important;
+      font-weight: 800 !important;
     }
 
     /* Ícones, Bordas e Links Globais */
@@ -3590,36 +3595,65 @@
   }
 
   /* PLANO BÁSICO: NA COR CINZA DOS NÚMEROS (#52677B), TOTALMENTE SEM BRILHO E SEM PULSO */
+  .elementor-element-71c9d412 {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-height: auto !important;
+    height: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
   #cta-plano-basico,
   html body #cta-plano-basico,
-  .elementor-element-71c9d412,
   .elementor-element-71c9d412 .elementor-button {
     background: #52677B !important;
     background-color: #52677B !important;
     border: none !important;
     border-radius: 999px !important;
-    min-height: 58px !important;
-    padding: 18px 36px !important;
+    min-height: 60px !important;
+    padding: 17px 34px !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     color: #FFFFFF !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    font-family: 'Poppins', Arial, sans-serif !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
     box-shadow: 0 8px 20px rgba(82, 103, 123, 0.35) !important;
     animation: none !important;
     transform: none !important;
     transition: background 0.2s ease, box-shadow 0.2s ease !important;
+    box-sizing: content-box !important;
+  }
+  @media (max-width: 767px) {
+    #cta-plano-basico,
+    html body #cta-plano-basico,
+    .elementor-element-71c9d412 .elementor-button {
+      padding: 16px 22px !important;
+      min-height: 58px !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
   }
   #cta-plano-basico *,
   html body #cta-plano-basico *,
-  .elementor-element-71c9d412 *,
   .elementor-element-71c9d412 .elementor-button * {
     color: #FFFFFF !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
     animation: none !important;
     transform: none !important;
   }
   #cta-plano-basico:hover,
   html body #cta-plano-basico:hover,
-  .elementor-element-71c9d412:hover,
   .elementor-element-71c9d412 .elementor-button:hover {
     background: #445566 !important;
     background-color: #445566 !important;
@@ -3636,7 +3670,7 @@
     display: none !important;
     content: none !important;
     animation: none !important;
-  }
+  } 
 </style>
 
 
@@ -3717,9 +3751,9 @@
 				<div data-rocket-location-hash="1d4e59210fa5005926741be0bd61b6da" class="elementor-element elementor-element-2665c668 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="2665c668" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 					<h2 class="elementor-heading-title elementor-size-default">Veja tudo que você vai receber</h2>				</div>
 				<div class="elementor-element elementor-element-1842b7ed elementor-widget__width-inherit elementor-widget elementor-widget-image-carousel" data-id="1842b7ed" data-element_type="widget" data-e-type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;5&quot;,&quot;lazyload&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:0,&quot;speed&quot;:5000,&quot;slides_to_show_mobile&quot;:&quot;1&quot;,&quot;slides_to_show_tablet&quot;:&quot;3&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
-							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="rtl">
+							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="ltr">
 			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-borda-madeira.webp" data-src="/projeto-borda-madeira.webp" alt="Lago com Borda Angular de Madeira"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-bica-bambu.webp" data-src="/projeto-bica-bambu.webp" alt="Lago com Bica de Bambu"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-cascata-laje.webp" data-src="/projeto-cascata-laje.webp" alt="Lago com Cascata de Laje Larga"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-pedra-escura.webp" data-src="/projeto-pedra-escura.webp" alt="Lago com Cascata de Pedra Escura"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-fonte-trailer.webp" data-src="/projeto-fonte-trailer.webp" alt="Lago com Fonte ao Lado do Trailer"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-curvo-moldado.webp" data-src="/projeto-curvo-moldado.webp" alt="Lago Curvo com Borda Moldada"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-cascata-tronco.webp" data-src="/projeto-cascata-tronco.webp" alt="Lago com Cascata e Tronco Natural"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-jarro-cascata.webp" data-src="/projeto-jarro-cascata.webp" alt="Lago com Jarro e Cascata"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-borda-madeira.webp" data-src="/projeto-borda-madeira.webp" alt="Lago com Borda Angular de Madeira"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-bica-bambu.webp" data-src="/projeto-bica-bambu.webp" alt="Lago com Bica de Bambu"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-cascata-laje.webp" data-src="/projeto-cascata-laje.webp" alt="Lago com Cascata de Laje Larga"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-pedra-escura.webp" data-src="/projeto-pedra-escura.webp" alt="Lago com Cascata de Pedra Escura"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-fonte-trailer.webp" data-src="/projeto-fonte-trailer.webp" alt="Lago com Fonte ao Lado do Trailer"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-curvo-moldado.webp" data-src="/projeto-curvo-moldado.webp" alt="Lago Curvo com Borda Moldada"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-cascata-tronco.webp" data-src="/projeto-cascata-tronco.webp" alt="Lago com Cascata e Tronco Natural"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="16 de 16"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" width="900" height="1272" class="swiper-slide-image swiper-lazy" fetchpriority="low" src="/projeto-jarro-cascata.webp" data-src="/projeto-jarro-cascata.webp" alt="Lago com Jarro e Cascata"><div class="swiper-lazy-preloader"></div></figure></div>			</div>
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-borda-madeira.webp" data-src="/projeto-borda-madeira.webp" alt="Lago com Borda Angular de Madeira"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-bica-bambu.webp" data-src="/projeto-bica-bambu.webp" alt="Lago com Bica de Bambu"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-cascata-laje.webp" data-src="/projeto-cascata-laje.webp" alt="Lago com Cascata de Laje Larga"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-pedra-escura.webp" data-src="/projeto-pedra-escura.webp" alt="Lago com Cascata de Pedra Escura"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-fonte-trailer.webp" data-src="/projeto-fonte-trailer.webp" alt="Lago com Fonte ao Lado do Trailer"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-curvo-moldado.webp" data-src="/projeto-curvo-moldado.webp" alt="Lago Curvo com Borda Moldada"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-cascata-tronco.webp" data-src="/projeto-cascata-tronco.webp" alt="Lago com Cascata e Tronco Natural"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-jarro-cascata.webp" data-src="/projeto-jarro-cascata.webp" alt="Lago com Jarro e Cascata"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-borda-madeira.webp" data-src="/projeto-borda-madeira.webp" alt="Lago com Borda Angular de Madeira"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-bica-bambu.webp" data-src="/projeto-bica-bambu.webp" alt="Lago com Bica de Bambu"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-cascata-laje.webp" data-src="/projeto-cascata-laje.webp" alt="Lago com Cascata de Laje Larga"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-pedra-escura.webp" data-src="/projeto-pedra-escura.webp" alt="Lago com Cascata de Pedra Escura"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-fonte-trailer.webp" data-src="/projeto-fonte-trailer.webp" alt="Lago com Fonte ao Lado do Trailer"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-curvo-moldado.webp" data-src="/projeto-curvo-moldado.webp" alt="Lago Curvo com Borda Moldada"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-cascata-tronco.webp" data-src="/projeto-cascata-tronco.webp" alt="Lago com Cascata e Tronco Natural"><div class="swiper-lazy-preloader"></div></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="16 de 16"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="900" height="1272" class="swiper-slide-image" src="/projeto-jarro-cascata.webp" data-src="/projeto-jarro-cascata.webp" alt="Lago com Jarro e Cascata"><div class="swiper-lazy-preloader"></div></figure></div>			</div>
 							
 									</div>
 						</div>
@@ -3980,23 +4014,26 @@
 					<p style="margin: 0 auto; max-width: 680px; color: #FFFFFF !important; font-family: 'Poppins', Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.55;">Confira a experiência de quem já adquiriu os projetos e teve acesso às videoaulas e aos bônus exclusivos.</p>
 				</div>
 				<div class="elementor-element elementor-element-depoimentos-carousel elementor-widget__width-inherit elementor-widget elementor-widget-image-carousel" data-id="depoimentos-carousel" data-element_type="widget" data-e-type="widget" data-settings='{"slides_to_show":"5","lazyload":"yes","autoplay_speed":0,"speed":5000,"slides_to_show_mobile":"1","slides_to_show_tablet":"3","navigation":"none","autoplay":"yes","infinite":"yes","image_spacing_custom":{"unit":"px","size":20,"sizes":[]},"image_spacing_custom_tablet":{"unit":"px","size":"","sizes":[]},"image_spacing_custom_mobile":{"unit":"px","size":"","sizes":[]}}' data-widget_type="image-carousel.default" style="">
-					<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="rtl">
+					<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="ltr">
 					<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento1.webp" alt="Depoimento 1" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento2.webp" alt="Depoimento 2" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento1.webp" alt="Depoimento 1" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento2.webp" alt="Depoimento 2" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento1.webp" alt="Depoimento 1" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento2.webp" alt="Depoimento 2" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento3.webp" alt="Depoimento 3" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento4.webp" alt="Depoimento 4" /></figure></div>
-							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 de 15"><figure class="swiper-slide-inner"><img loading="lazy" decoding="async" class="swiper-slide-image" src="/depoimento5.webp" alt="Depoimento 5" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento1.webp" alt="Depoimento de Paulo no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento2.webp" alt="Depoimento de Antônio no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento3.webp" alt="Depoimento de José no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento4.webp" alt="Depoimento de Maria no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento5.webp" alt="Depoimento de Roberto no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento6.webp" alt="Depoimento de Carlos no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento1.webp" alt="Depoimento de Paulo no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento2.webp" alt="Depoimento de Antônio no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento3.webp" alt="Depoimento de José no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento4.webp" alt="Depoimento de Maria no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="11 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento5.webp" alt="Depoimento de Roberto no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="12 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento6.webp" alt="Depoimento de Carlos no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="13 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento1.webp" alt="Depoimento de Paulo no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="14 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento2.webp" alt="Depoimento de Antônio no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="15 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento3.webp" alt="Depoimento de José no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="16 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento4.webp" alt="Depoimento de Maria no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="17 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento5.webp" alt="Depoimento de Roberto no WhatsApp" /></figure></div>
+							<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="18 de 18"><figure class="swiper-slide-inner"><img loading="eager" decoding="async" width="572" height="1024" class="swiper-slide-image" src="/depoimento6.webp" alt="Depoimento de Carlos no WhatsApp" /></figure></div>
 					</div>
 				</div>
 			</div>
@@ -4083,7 +4120,7 @@
 									</li>
 						</ul>
 						</div>
-				<div class="elementor-element elementor-element-71c9d412 elementor-widget elementor-widget-button" data-id="71c9d412" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-71c9d412 elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="71c9d412" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 										<a href="https://app.zuptos.com.br/checkout/a72967448fe374bb" id="cta-plano-basico" class="elementor-button elementor-button-link elementor-size-sm gtm-link-click zuptos-checkout" target="_blank" data-clean-base="https://app.zuptos.com.br/checkout/a72967448fe374bb" data-checkout-url="https://app.zuptos.com.br/checkout/a72967448fe374bb" data-checkout-plan="Plano Básico" data-checkout-value="17.90" rel="noopener noreferrer">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">QUERO SOMENTE O BÁSICO</span>
@@ -4443,11 +4480,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 <style>
-.elementor-element-1842b7ed .swiper-slide,
-.elementor-element-depoimentos-carousel .swiper-slide {
+.elementor-element-1842b7ed .swiper-slide {
     overflow: hidden !important;
     border-radius: 16px !important;
     border: 3px solid rgba(255, 255, 255, 0.4) !important;
+}
+.elementor-element-depoimentos-carousel .swiper-slide {
+    overflow: hidden !important;
+    border-radius: 16px !important;
+    border: 4px solid #FFFFFF !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22) !important;
 }
 .elementor-element-1842b7ed .swiper-slide-image,
 .elementor-element-depoimentos-carousel .swiper-slide-image {
@@ -4472,7 +4515,7 @@ document.addEventListener("DOMContentLoaded", function() {
 .lc-viewport img{-webkit-user-drag:none;user-select:none}
 .elementor-element-1842b7ed .lc-slide{aspect-ratio:900/1272}
 .elementor-element-1842b7ed .lc-slide{overflow:hidden!important;-webkit-clip-path:inset(0 round 12px)!important;clip-path:inset(0 round 12px)!important;background:#FFFFFF!important;border:1px solid #D9E8F0!important;box-shadow:0 4px 14px rgba(0,0,0,0.06)!important}
-.elementor-element-depoimentos-carousel .lc-slide{overflow:hidden!important;-webkit-clip-path:inset(0 round 16px)!important;clip-path:inset(0 round 16px)!important;background:#FFFFFF!important;border:1px solid #D9E8F0!important}
+.elementor-element-depoimentos-carousel .lc-slide{overflow:hidden!important;-webkit-clip-path:inset(0 round 16px)!important;clip-path:inset(0 round 16px)!important;background:#FFFFFF!important;border:4px solid #FFFFFF!important;border-radius:16px!important;box-shadow:0 8px 24px rgba(0,0,0,0.22)!important}
 .elementor-element-1842b7ed .lc-slide .swiper-slide-image{object-fit:cover!important;width:100%!important;height:100%!important}
 .lc-viewport .lc-slide .swiper-slide-inner,.lc-viewport .lc-slide figure{overflow:hidden!important}
 
@@ -5778,65 +5821,132 @@ document.addEventListener("DOMContentLoaded", function() {
 <script>
 (function(){
   function initLocalCarousel(root){
-    var viewport=root.querySelector('.elementor-image-carousel-wrapper');
-    var track=root.querySelector('.elementor-image-carousel');
-    if(!viewport||!track||viewport.dataset.lcInit)return;
-    viewport.dataset.lcInit='1';
+    var viewport = root.querySelector('.elementor-image-carousel-wrapper');
+    var track = root.querySelector('.elementor-image-carousel');
+    if(!viewport || !track || viewport.dataset.lcInit) return;
+    viewport.dataset.lcInit = '1';
     viewport.classList.add('lc-viewport');
     track.classList.add('lc-track');
-    var slides=Array.prototype.slice.call(track.children);
-    if(!slides.length)return;
-    slides.forEach(function(s){s.classList.add('lc-slide');});
-    slides.forEach(function(s){var c=s.cloneNode(true);c.setAttribute('aria-hidden','true');c.classList.add('lc-clone');track.appendChild(c);});
-    var rtl=viewport.getAttribute('dir')==='rtl';
-    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var running=false,offset=0,last=0,resumeAt=0,dragging=false,dragX=0,dragOff=0,moved=0;
-    var unit=0,setW=0,n=slides.length,lastIdx=-1,holdStart=0;
-    function pairReady(){if(n<=0)return true;var ci=idxFromOffset();var nx=rtl?ci-1:ci+1;nx=((nx%n)+n)%n;var pair=[slides[ci],slides[nx]];for(var k=0;k<2;k++){var s=pair[k];if(!s)continue;var img=s.querySelector('img[data-src]');if(!img)continue;if(!img.getAttribute('src')){setImg(s);return false;}if(!img.complete)return false;}return true;}
+    viewport.setAttribute('dir', 'ltr');
+
+    var imgs = track.querySelectorAll('img');
+    imgs.forEach(function(img){
+      if(img.getAttribute('data-src') && !img.getAttribute('src')){
+        img.setAttribute('src', img.getAttribute('data-src'));
+      }
+      img.loading = 'eager';
+      img.decoding = 'async';
+    });
+
+    var slides = Array.prototype.slice.call(track.children);
+    if(!slides.length) return;
+    slides.forEach(function(s){ s.classList.add('lc-slide'); });
+
+    slides.forEach(function(s){
+      var c = s.cloneNode(true);
+      c.setAttribute('aria-hidden', 'true');
+      c.classList.add('lc-clone');
+      var cImg = c.querySelector('img');
+      if(cImg){
+        if(cImg.getAttribute('data-src') && !cImg.getAttribute('src')){
+          cImg.setAttribute('src', cImg.getAttribute('data-src'));
+        }
+        cImg.loading = 'eager';
+      }
+      track.appendChild(c);
+    });
+
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduce) return;
+
+    var running = true;
+    var offset = 0;
+    var last = 0;
+    var unit = 0;
+    var setW = 0;
+    var isDragging = false;
+    var startX = 0;
+    var dragStartOffset = 0;
+
     function measure(){
-      unit=0;setW=0;
-      for(var i=0;i<slides.length;i++){var w=slides[i].getBoundingClientRect().width;if(w>0){unit=w+20;}}
-      if(unit>0)setW=unit*slides.length;
-      offset=norm(offset);
-    }
-    function norm(o){if(setW<=0)return o;if(rtl){o=((o%setW)+setW)%setW;}else{o=o%setW;if(o>0)o-=setW;else if(o<=-setW)o+=setW;}return o;}
-    function loadImg(slide){var img=slide.querySelector('img[data-src]');if(img&&!img.getAttribute('src')){img.setAttribute('src',img.getAttribute('data-src'));}}
-    function setImg(slide){var img=slide.querySelector('img[data-src]');if(!img)return;if(!img.getAttribute('src')){img.setAttribute('src',img.getAttribute('data-src'));img.addEventListener('load',function(){try{slide.style.transform='translateZ(0)';void slide.offsetHeight;}catch(_){}},{once:true});}}
-    function idxFromOffset(){if(unit<=0||setW<=0||n<=0)return 0;var k=Math.round((rtl?offset:-offset)/unit)%n;return (k+n)%n;}
-    function ensureWindow(){if(unit<=0||n<=0)return;var ci=idxFromOffset();lastIdx=ci;var all=track.children;for(var d=-1;d<=3;d++){var j=((ci+d)%n+n)%n;if(all[j])setImg(all[j]);if(all[j+n])setImg(all[j+n]);}}
-    function onVis(entries){
-      for(var k=0;k<entries.length;k++){var e=entries[k];
-        if(e.target===viewport){running=e.isIntersecting&&!document.hidden;if(e.isIntersecting)ensureWindow();}
-        else if(e.isIntersecting){loadImg(e.target);io.unobserve(e.target);}
+      unit = 0;
+      setW = 0;
+      if(!slides.length) return;
+      var w = slides[0].getBoundingClientRect().width;
+      if(w > 0){
+        unit = w + 20;
+        setW = unit * slides.length;
       }
     }
-    var io=null;
-    function checkVisFallback(){try{var r=viewport.getBoundingClientRect();if(r.bottom>-400&&r.top<window.innerHeight+400&&!document.hidden){running=true;ensureWindow();return true;}}catch(_){}return false;}
-    var fallbackTimer=setInterval(function(){if(running||reduce){clearInterval(fallbackTimer);return;}if(checkVisFallback())clearInterval(fallbackTimer);},2500);
-    window.addEventListener('scroll',function(){if(!running&&!reduce)checkVisFallback();},{passive:true});
-    if('IntersectionObserver' in window){
-      io=new IntersectionObserver(onVis,{rootMargin:'300px 0px'});
-      io.observe(viewport);
-      Array.prototype.forEach.call(track.children,function(s){io.observe(s);});
-    }else{
-      running=true;
-      Array.prototype.forEach.call(track.children,loadImg);
+
+    measure();
+    window.addEventListener('resize', measure, { passive: true });
+
+    viewport.addEventListener('pointerdown', function(e){
+      isDragging = true;
+      startX = e.clientX;
+      dragStartOffset = offset;
+      try { viewport.setPointerCapture(e.pointerId); } catch(_){}
+    }, { passive: true });
+
+    viewport.addEventListener('pointermove', function(e){
+      if(!isDragging) return;
+      var dx = e.clientX - startX;
+      offset = dragStartOffset - dx;
+      if(setW > 0){
+        offset = ((offset % setW) + setW) % setW;
+        track.style.transform = 'translate3d(' + (-offset).toFixed(1) + 'px,0,0)';
+      }
+    }, { passive: true });
+
+    function endDrag(){
+      isDragging = false;
     }
+    viewport.addEventListener('pointerup', endDrag, { passive: true });
+    viewport.addEventListener('pointercancel', endDrag, { passive: true });
+
+    var speed = 40;
+
     function frame(t){
       requestAnimationFrame(frame);
-      if(reduce||!running||dragging||document.hidden)return void(last=t);
-      if(performance.now()<resumeAt){last=t;return;}
-      if(unit<=0||setW<=0)measure();
-      if(!last)last=t;
-      if(!pairReady()){if(!holdStart)holdStart=t;if(t-holdStart<8000){last=t;return;}}else holdStart=0;
-      var dt=t-last;last=t;if(dt>50)dt=50;
-      if(unit<=0||setW<=0)return;
-      offset+=(unit/5000)*dt*(rtl?1:-1);
-      offset=norm(offset);
-      track.style.transform='translate3d('+offset.toFixed(1)+'px,0,0)';
-      if(n>0&&idxFromOffset()!==lastIdx)ensureWindow();
+      if(document.hidden || !running){
+        last = t;
+        return;
+      }
+      if(!last) last = t;
+      var dt = (t - last) / 1000;
+      last = t;
+      if(dt > 0.1) dt = 0.1;
+
+      if(isDragging) return;
+
+      if(unit <= 0 || setW <= 0){
+        measure();
+        if(unit <= 0 || setW <= 0) return;
+      }
+
+      offset += speed * dt;
+      if(offset >= setW){
+        offset -= setW;
+      }
+      track.style.transform = 'translate3d(' + (-offset).toFixed(1) + 'px,0,0)';
     }
-    window.addEventListener('resize',measure,{passive:true});
+
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if(entry.target === viewport){
+            running = entry.isIntersecting;
+            if(running){
+              measure();
+              last = 0;
+            }
+          }
+        });
+      }, { rootMargin: '300px 0px' });
+      io.observe(viewport);
+    }
+
     requestAnimationFrame(frame);
   }
   function boot(){document.querySelectorAll('.elementor-widget-image-carousel').forEach(initLocalCarousel);}
