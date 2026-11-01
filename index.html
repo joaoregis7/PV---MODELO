@@ -3448,38 +3448,46 @@
   }
 
   /* ========================================================
-     BOTÕES / CTAS: BRILHO RELUZENTE CONTÍNUO EM TODOS OS BOTÕES
-     E PULSAÇÃO LENTA EXCLUSIVA NO PLANO COMPLETO
+     BOTÕES / CTAS: BRILHO RELUZENTE PASSANDO EM TODOS OS CTAS
+     E PULSAÇÃO LENTA EXCLUSIVA NO BOTÃO PLANO COMPLETO
      ======================================================== */
-  /* Brilho reluzente contínuo que passa sem parar */
+  /* Brilho reluzente reluzindo e passando com pausa rítmica */
   @keyframes passarBrilhoReluzenteContinuo {
     0% {
-      transform: translateX(-160%) skewX(-25deg);
+      left: -130%;
+      opacity: 0;
     }
-    100% {
-      transform: translateX(350%) skewX(-25deg);
+    8% {
+      opacity: 0.95;
+    }
+    48% {
+      left: 140%;
+      opacity: 0.95;
+    }
+    49%, 100% {
+      left: 140%;
+      opacity: 0;
     }
   }
 
-  /* Pulso lento e bem visível EXCLUSIVO no Plano Completo */
+  /* Pulso lento, suave e contínuo EXCLUSIVO no botão QUERO O PLANO COMPLETO */
   @keyframes pulsePlanoCompletoLento {
     0%, 100% {
       transform: scale(1);
       box-shadow: 0 8px 22px rgba(49, 178, 110, 0.4);
     }
     50% {
-      transform: scale(1.06);
-      box-shadow: 0 18px 40px rgba(49, 178, 110, 0.85);
+      transform: scale(1.045);
+      box-shadow: 0 16px 36px rgba(49, 178, 110, 0.78);
     }
   }
 
-  /* CTAs normais: sem pulo/salto */
+  /* Demais CTAs: estáticos em tamanho (sem pulo/salto) */
   .elementor-button,
   a.elementor-button,
   .elementor-widget-button,
   .elementor-widget-button .elementor-widget-container,
   .elementor-element-71c9d412,
-  .elementor-element-49832822,
   .elementor-element-2246f33f,
   .elementor-element-23a0ad0e,
   .elementor-element-3971d552,
@@ -3492,11 +3500,10 @@
   #cta-faq-completo,
   #cta-plano-basico,
   #cta-popup-oferta-especial {
-    animation: none !important;
-    transform: none !important;
+    animation: none;
   }
 
-  /* Verde anterior padronizado (#31B26E) para TODOS os CTAs da página */
+  /* Estilização base com overflow hidden para acomodar o brilho reluzente */
   #cta-hero-completo,
   #cta-conteudo-completo,
   #cta-bonus-completo,
@@ -3518,7 +3525,6 @@
     box-shadow: 0 10px 24px rgba(49, 178, 110, 0.35) !important;
     position: relative !important;
     overflow: hidden !important;
-    isolation: isolate !important;
   }
 
   #cta-hero-completo *,
@@ -3530,6 +3536,8 @@
   #cta-popup-oferta-especial * {
     color: #FFFFFF !important;
     font-weight: 900 !important;
+    position: relative !important;
+    z-index: 2 !important;
   }
 
   #cta-hero-completo:hover,
@@ -3545,7 +3553,7 @@
     border: none !important;
   }
 
-  /* Brilho reluzente contínuo, super visível, passando em todos os CTAs */
+  /* BRILHO RELUZENTE QUE FICA PASSANDO NOS BOTÕES CTAS (MENOS NO BÁSICO) */
   #cta-hero-completo::after,
   #cta-conteudo-completo::after,
   #cta-bonus-completo::after,
@@ -3559,31 +3567,34 @@
     content: '' !important;
     display: block !important;
     position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 60% !important;
-    height: 100% !important;
+    top: -50% !important;
+    left: -130% !important;
+    width: 80px !important;
+    height: 200% !important;
     background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.85) 50%,
-      rgba(255, 255, 255, 0) 100%
+      105deg,
+      rgba(255, 255, 255, 0) 15%,
+      rgba(255, 255, 255, 0.25) 30%,
+      rgba(255, 255, 255, 0.95) 50%,
+      rgba(255, 255, 255, 0.25) 70%,
+      rgba(255, 255, 255, 0) 85%
     ) !important;
-    transform: translateX(-160%) skewX(-25deg) !important;
-    animation: passarBrilhoReluzenteContinuo 2.2s linear infinite !important;
+    transform: rotate(25deg) !important;
+    animation: passarBrilhoReluzenteContinuo 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
     pointer-events: none !important;
-    z-index: 10 !important;
+    z-index: 5 !important;
   }
 
-  /* Pulsação lenta e nítida EXCLUSIVA no botão QUERO O PLANO COMPLETO */
+  /* PULSAÇÃO LENTA EXCLUSIVA NO BOTÃO DO PLANO COMPLETO */
   #cta-plano-completo,
   html body #cta-plano-completo,
   .elementor-element-49832822 .elementor-button {
-    animation: pulsePlanoCompletoLento 2.6s ease-in-out infinite !important;
+    animation: pulsePlanoCompletoLento 2.8s ease-in-out infinite !important;
     transform-origin: center center !important;
+    will-change: transform, box-shadow !important;
   }
 
-  /* PLANO BÁSICO: TOTALMENTE ESTÁTICO (ZERO PULO, ZERO SALTO, ZERO PULSE, ZERO BRILHO) */
+  /* PLANO BÁSICO: TOTALMENTE SEM BRILHO E SEM PULSO (ESTÁTICO) */
   #cta-plano-basico,
   #cta-plano-basico *,
   .elementor-element-71c9d412,
