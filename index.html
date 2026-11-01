@@ -163,7 +163,7 @@
 
     .elementor-element-3971d552 .elementor-button,
     #cta-hero-completo,
-    .elementor-button:not(#cta-plano-completo) {
+    .elementor-button:not(#cta-plano-completo):not(#cta-plano-basico) {
       position: relative !important;
       overflow: hidden !important;
       isolation: isolate !important;
@@ -185,7 +185,7 @@
     }
     .elementor-element-3971d552 .elementor-button:hover,
     #cta-hero-completo:hover,
-    .elementor-button:hover {
+    .elementor-button:not(#cta-plano-completo):not(#cta-plano-basico):hover {
       background: linear-gradient(135deg, #43cf84, #2fae6b) !important;
       box-shadow: 0 14px 30px rgba(49, 178, 110, 0.5) !important;
       transform: none !important;
@@ -436,19 +436,20 @@
       letter-spacing: .1px !important;
       line-height: 1.15 !important;
     }
-    /* Botão Secundário: Fundo #145DA0, Texto #FFFFFF */
+    /* Botão Secundário Plano Básico: Fundo #52677B (cor cinza dos números), Texto #FFFFFF */
     .elementor-element-71c9d412 .elementor-button {
-      background: #145DA0 !important;
-      background-color: #145DA0 !important;
+      background: #52677B !important;
+      background-color: #52677B !important;
       color: #FFFFFF !important;
-      border: 1px solid #145DA0 !important;
-      box-shadow: 0 8px 20px rgba(20, 93, 160, 0.25) !important;
+      border: 1px solid #52677B !important;
+      box-shadow: 0 8px 20px rgba(82, 103, 123, 0.35) !important;
       transform: none !important;
     }
     .elementor-element-71c9d412 .elementor-button:hover {
-      background: #103B64 !important;
-      background-color: #103B64 !important;
+      background: #445566 !important;
+      background-color: #445566 !important;
       color: #FFFFFF !important;
+      box-shadow: 0 10px 24px rgba(82, 103, 123, 0.45) !important;
     }
     .elementor-element-71c9d412 .elementor-button .elementor-button-text {
       color: #FFFFFF !important;
@@ -1564,9 +1565,9 @@
       fill: #145DA0 !important;
     }
     .elementor-element-71c9d412 .elementor-button {
-      background: #145DA0 !important;
+      background: #52677B !important;
       color: #FFFFFF !important;
-      border: 1px solid #145DA0 !important;
+      border: 1px solid #52677B !important;
     }
     .elementor-element-71c9d412 .elementor-button .elementor-button-text {
       color: #FFFFFF !important;
@@ -3581,20 +3582,41 @@
     will-change: transform, box-shadow !important;
   }
 
-  /* PLANO BÁSICO: TOTALMENTE SEM BRILHO E SEM PULSO (ESTÁTICO) */
+  /* PLANO BÁSICO: NA COR CINZA DOS NÚMEROS (#52677B), TOTALMENTE SEM BRILHO E SEM PULSO */
   #cta-plano-basico,
-  #cta-plano-basico *,
+  html body #cta-plano-basico,
   .elementor-element-71c9d412,
-  .elementor-element-71c9d412 *,
-  .elementor-element-71c9d412 .elementor-button,
-  .elementor-element-71c9d412 .elementor-widget-container {
+  .elementor-element-71c9d412 .elementor-button {
+    background: #52677B !important;
+    background-color: #52677B !important;
+    border: none !important;
+    border-radius: 999px !important;
+    min-height: 58px !important;
+    padding: 18px 36px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 8px 20px rgba(82, 103, 123, 0.35) !important;
     animation: none !important;
     transform: none !important;
-    transition: none !important;
+    transition: background 0.2s ease, box-shadow 0.2s ease !important;
+  }
+  #cta-plano-basico *,
+  html body #cta-plano-basico *,
+  .elementor-element-71c9d412 *,
+  .elementor-element-71c9d412 .elementor-button * {
+    color: #FFFFFF !important;
+    animation: none !important;
+    transform: none !important;
   }
   #cta-plano-basico:hover,
+  html body #cta-plano-basico:hover,
   .elementor-element-71c9d412:hover,
   .elementor-element-71c9d412 .elementor-button:hover {
+    background: #445566 !important;
+    background-color: #445566 !important;
+    box-shadow: 0 10px 24px rgba(82, 103, 123, 0.45) !important;
     transform: none !important;
     --e-transform-scale: 1 !important;
   }
