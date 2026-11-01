@@ -226,9 +226,7 @@ html body{
 
 
 
-/* Start custom CSS for button, class: .elementor-element-71c9d412 */.elementor-4874 .elementor-element.elementor-element-71c9d412 {
-  animation: pulse-soft 2s infinite ease-in-out;
-}
+/* Start custom CSS for button, class: .elementor-element-71c9d412 */.elementor-4874 .elementor-element.elementor-element-71c9d412 { animation: none !important; transform: none !important; }
 
 @keyframes pulse-soft {
   0% {
